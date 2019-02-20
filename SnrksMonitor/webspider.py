@@ -46,7 +46,7 @@ class WebSpider:
         # 以下为对nike网站的分析
         shoes_div = s.xpath('//figure[@class="d-md-h ncss-col-sm-12 va-sm-t pb0-sm prl0-sm"]')
         for shoes in shoes_div:
-            shoes_name = shoes.xpath('.//h3[@class="ncss-brand u-uppercase mb-1-sm fs16-sm"].text')
+            shoes_name = shoes.xpath('.//h3[@class="ncss-brand u-uppercase mb-1-sm fs16-sm"]/text()')
             print(shoes_name)
             # shoes_style = shoes.xpath('.//div[@class="figcaption-content"]//h6')
             shoes_img = shoes.xpath('.//img/@src')
