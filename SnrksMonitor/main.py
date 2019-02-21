@@ -48,9 +48,13 @@ if __name__ == '__main__':
         try:
             data.spider(url=config_url, useragent=config_useragent, timeout=timeout)
         except TimeoutError:
-            print('请求网站超时')
+            log.error('nike time out')
         msg = data.data_analysis(update=update)
-        push.sendMessage(msg=msg, user=chatroomid)
+        if len(msg) > 0:
+            log.info('No.{} start pushing'.format(num))
+            push.sendMessage(msg=msg, user=chatroomid)
+        else:
+            log.info('No.{} no update'.format(num))
         log.info('No.{} is over,it will sleep {} seconds'.format(num, sleeptime))
         time.sleep(sleeptime)  # 暂停时间
         num += 1

@@ -42,7 +42,7 @@ class wechat():
         for item in groupContent:
             if item['NickName'] == nickname:
                 chatroomid = item['UserName']
-        print('成功获取群聊“%s”的ID：%s' % (nickname, chatroomid))
+        log.info('get chat room “%s” id successfully的ID：%s' % (nickname, chatroomid))
         return chatroomid
 
 

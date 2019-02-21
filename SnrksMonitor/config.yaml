@@ -44,9 +44,9 @@ monitortime: 60
 maxtimeout: 30
 logConfig:
   testLogLevel:
-    mainLogLevel: DEBUG
-    fileLogLevel: DEBUG
-    consoleLogLevel: DEBUG
+    mainLogLevel: INFO
+    fileLogLevel: INFO
+    consoleLogLevel: INFO
   productLogLevel:
     mainLogLevel: INFO
     fileLogLevel: INFO

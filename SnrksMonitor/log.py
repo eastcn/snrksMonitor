@@ -29,6 +29,8 @@ class Logger:
 
         self.logger.addHandler(file_log)
         self.logger.addHandler(console_log)
+        self.logger.removeHandler(file_log)
+        self.logger.removeHandler(console_log)
         file_log.close()
         console_log.close()
 

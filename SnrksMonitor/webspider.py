@@ -89,6 +89,7 @@ class WebSpider:
                     pass
                 elif shoes not in self.history:
                     update.append(shoes)
+
         log.info('the number of updated:%s' % len(update))
         return update
 

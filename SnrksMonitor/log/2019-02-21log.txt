@@ -532,3 +532,669 @@
 [2019-02-21 17:39:40,001] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?r=1550741954944&synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&uin=573267107&_=1550741954944&sid=glSDMhmLdjLu2ysu&deviceid=e460003337277183&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165 HTTP/1.1" 200 43
 [2019-02-21 17:39:40,001] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?r=1550741954944&synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&uin=573267107&_=1550741954944&sid=glSDMhmLdjLu2ysu&deviceid=e460003337277183&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165 HTTP/1.1" 200 43
 [2019-02-21 17:39:40,001] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?r=1550741954944&synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&uin=573267107&_=1550741954944&sid=glSDMhmLdjLu2ysu&deviceid=e460003337277183&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165 HTTP/1.1" 200 43
+[2019-02-21 17:42:35,440] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): login.weixin.qq.com
+[2019-02-21 17:42:35,440] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): login.weixin.qq.com
+[2019-02-21 17:42:35,440] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): login.weixin.qq.com
+[2019-02-21 17:42:35,807] connectionpool.py _make_request line:396 [DEBUG]https://login.weixin.qq.com:443 "GET / HTTP/1.1" 200 85823
+[2019-02-21 17:42:35,807] connectionpool.py _make_request line:396 [DEBUG]https://login.weixin.qq.com:443 "GET / HTTP/1.1" 200 85823
+[2019-02-21 17:42:35,807] connectionpool.py _make_request line:396 [DEBUG]https://login.weixin.qq.com:443 "GET / HTTP/1.1" 200 85823
+[2019-02-21 17:42:35,850] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): wx2.qq.com
+[2019-02-21 17:42:35,850] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): wx2.qq.com
+[2019-02-21 17:42:35,850] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): wx2.qq.com
+[2019-02-21 17:42:36,509] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsync?sid=glSDMhmLdjLu2ysu&skey=@crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&pass_ticket=K63lHM2p070aAfv1v%2FJxqN09o538mqtX25jT%2BZXivkLia31EhubM7WrpFYFMG0YV HTTP/1.1" 200 1348
+[2019-02-21 17:42:36,509] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsync?sid=glSDMhmLdjLu2ysu&skey=@crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&pass_ticket=K63lHM2p070aAfv1v%2FJxqN09o538mqtX25jT%2BZXivkLia31EhubM7WrpFYFMG0YV HTTP/1.1" 200 1348
+[2019-02-21 17:42:36,509] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsync?sid=glSDMhmLdjLu2ysu&skey=@crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&pass_ticket=K63lHM2p070aAfv1v%2FJxqN09o538mqtX25jT%2BZXivkLia31EhubM7WrpFYFMG0YV HTTP/1.1" 200 1348
+[2019-02-21 17:42:36,528] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 17:42:36,528] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 17:42:36,528] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 17:42:36,529] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 17:42:36,529] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 17:42:36,529] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 17:42:36,537] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): webpush.wx2.qq.com
+[2019-02-21 17:42:36,537] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): webpush.wx2.qq.com
+[2019-02-21 17:42:36,537] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): webpush.wx2.qq.com
+[2019-02-21 17:42:36,537] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): www.nike.com
+[2019-02-21 17:42:36,537] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): www.nike.com
+[2019-02-21 17:42:36,537] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): www.nike.com
+[2019-02-21 17:42:36,610] connectionpool.py _make_request line:396 [DEBUG]https://www.nike.com:443 "GET /cn/launch/?s=upcoming HTTP/1.1" 200 None
+[2019-02-21 17:42:36,610] connectionpool.py _make_request line:396 [DEBUG]https://www.nike.com:443 "GET /cn/launch/?s=upcoming HTTP/1.1" 200 None
+[2019-02-21 17:42:36,610] connectionpool.py _make_request line:396 [DEBUG]https://www.nike.com:443 "GET /cn/launch/?s=upcoming HTTP/1.1" 200 None
+[2019-02-21 17:42:36,642] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 17:42:36,642] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 17:42:36,642] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 17:42:36,643] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,643] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,643] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,646] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,646] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,646] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,708] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51600
+[2019-02-21 17:42:36,708] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51600
+[2019-02-21 17:42:36,708] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51600
+[2019-02-21 17:42:36,724] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 17:42:36,724] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 17:42:36,724] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 17:42:36,724] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,724] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,724] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,728] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,728] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,728] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,788] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41374
+[2019-02-21 17:42:36,788] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41374
+[2019-02-21 17:42:36,788] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41374
+[2019-02-21 17:42:36,801] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 17:42:36,801] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 17:42:36,801] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 17:42:36,802] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,802] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,802] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,805] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,805] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,805] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,846] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52760
+[2019-02-21 17:42:36,846] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52760
+[2019-02-21 17:42:36,846] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52760
+[2019-02-21 17:42:36,857] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 17:42:36,857] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 17:42:36,857] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 17:42:36,858] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,858] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,858] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,861] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,861] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,861] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,893] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 34302
+[2019-02-21 17:42:36,893] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 34302
+[2019-02-21 17:42:36,893] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 34302
+[2019-02-21 17:42:36,900] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 17:42:36,900] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 17:42:36,900] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 17:42:36,901] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,901] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,901] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:36,904] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,904] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:36,904] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,015] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52223
+[2019-02-21 17:42:37,015] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52223
+[2019-02-21 17:42:37,015] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52223
+[2019-02-21 17:42:37,104] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 17:42:37,104] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 17:42:37,104] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 17:42:37,107] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,107] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,107] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,120] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,120] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,120] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,226] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41858
+[2019-02-21 17:42:37,226] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41858
+[2019-02-21 17:42:37,226] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41858
+[2019-02-21 17:42:37,266] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 17:42:37,266] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 17:42:37,266] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 17:42:37,267] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,267] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,267] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,272] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,272] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,272] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,654] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44217
+[2019-02-21 17:42:37,654] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44217
+[2019-02-21 17:42:37,654] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44217
+[2019-02-21 17:42:37,695] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 17:42:37,695] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 17:42:37,695] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 17:42:37,696] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,696] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,696] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,705] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,705] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,705] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,835] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 56239
+[2019-02-21 17:42:37,835] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 56239
+[2019-02-21 17:42:37,835] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 56239
+[2019-02-21 17:42:37,873] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 17:42:37,873] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 17:42:37,873] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 17:42:37,874] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,874] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,874] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:37,879] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,879] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,879] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:37,974] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44564
+[2019-02-21 17:42:37,974] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44564
+[2019-02-21 17:42:37,974] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44564
+[2019-02-21 17:42:38,009] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 17:42:38,009] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 17:42:38,009] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 17:42:38,010] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:38,010] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:38,010] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:38,014] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:38,014] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:38,014] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:38,504] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 59872
+[2019-02-21 17:42:38,504] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 59872
+[2019-02-21 17:42:38,504] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 59872
+[2019-02-21 17:42:38,558] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 17:42:38,558] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 17:42:38,558] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 17:42:38,560] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:38,560] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:38,560] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:38,568] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:38,568] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:38,568] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:38,651] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47982
+[2019-02-21 17:42:38,651] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47982
+[2019-02-21 17:42:38,651] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47982
+[2019-02-21 17:42:38,965] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 17:42:38,965] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 17:42:38,965] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 17:42:38,966] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:38,966] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:38,966] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:38,970] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:38,970] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:38,970] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:39,061] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47313
+[2019-02-21 17:42:39,061] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47313
+[2019-02-21 17:42:39,061] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47313
+[2019-02-21 17:42:39,107] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 17:42:39,107] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 17:42:39,107] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 17:42:39,108] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:39,108] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:39,108] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:39,114] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:39,114] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:39,114] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:39,557] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 60454
+[2019-02-21 17:42:39,557] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 60454
+[2019-02-21 17:42:39,557] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 60454
+[2019-02-21 17:42:39,667] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 17:42:39,667] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 17:42:39,667] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 17:42:39,669] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:39,669] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:39,669] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:39,678] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:39,678] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:39,678] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:39,866] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44835
+[2019-02-21 17:42:39,866] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44835
+[2019-02-21 17:42:39,866] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44835
+[2019-02-21 17:42:39,973] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 17:42:39,973] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 17:42:39,973] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 17:42:39,974] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:39,974] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:39,974] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:39,977] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:39,977] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:39,977] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:40,136] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47040
+[2019-02-21 17:42:40,136] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47040
+[2019-02-21 17:42:40,136] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47040
+[2019-02-21 17:42:40,183] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 17:42:40,183] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 17:42:40,183] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 17:42:40,184] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:40,184] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:40,184] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:42:40,193] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:40,193] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:40,193] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:42:40,335] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51132
+[2019-02-21 17:42:40,335] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51132
+[2019-02-21 17:42:40,335] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51132
+[2019-02-21 17:42:40,375] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 17:42:40,375] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 17:42:40,375] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 17:42:40,376] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 17:42:40,376] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 17:42:40,376] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 17:42:40,377] webspider.py data_analysis line:92 [INFO]the number of updated:0
+[2019-02-21 17:42:40,377] webspider.py data_analysis line:92 [INFO]the number of updated:0
+[2019-02-21 17:42:40,377] webspider.py data_analysis line:92 [INFO]the number of updated:0
+[2019-02-21 17:42:40,637] Image.py init line:417 [DEBUG]Importing BlpImagePlugin
+[2019-02-21 17:42:40,637] Image.py init line:417 [DEBUG]Importing BlpImagePlugin
+[2019-02-21 17:42:40,637] Image.py init line:417 [DEBUG]Importing BlpImagePlugin
+[2019-02-21 17:42:40,640] Image.py init line:417 [DEBUG]Importing BmpImagePlugin
+[2019-02-21 17:42:40,640] Image.py init line:417 [DEBUG]Importing BmpImagePlugin
+[2019-02-21 17:42:40,640] Image.py init line:417 [DEBUG]Importing BmpImagePlugin
+[2019-02-21 17:42:40,646] Image.py init line:417 [DEBUG]Importing BufrStubImagePlugin
+[2019-02-21 17:42:40,646] Image.py init line:417 [DEBUG]Importing BufrStubImagePlugin
+[2019-02-21 17:42:40,646] Image.py init line:417 [DEBUG]Importing BufrStubImagePlugin
+[2019-02-21 17:42:40,647] Image.py init line:417 [DEBUG]Importing CurImagePlugin
+[2019-02-21 17:42:40,647] Image.py init line:417 [DEBUG]Importing CurImagePlugin
+[2019-02-21 17:42:40,647] Image.py init line:417 [DEBUG]Importing CurImagePlugin
+[2019-02-21 17:42:40,649] Image.py init line:417 [DEBUG]Importing DcxImagePlugin
+[2019-02-21 17:42:40,649] Image.py init line:417 [DEBUG]Importing DcxImagePlugin
+[2019-02-21 17:42:40,649] Image.py init line:417 [DEBUG]Importing DcxImagePlugin
+[2019-02-21 17:42:40,652] Image.py init line:417 [DEBUG]Importing DdsImagePlugin
+[2019-02-21 17:42:40,652] Image.py init line:417 [DEBUG]Importing DdsImagePlugin
+[2019-02-21 17:42:40,652] Image.py init line:417 [DEBUG]Importing DdsImagePlugin
+[2019-02-21 17:42:40,653] Image.py init line:417 [DEBUG]Importing EpsImagePlugin
+[2019-02-21 17:42:40,653] Image.py init line:417 [DEBUG]Importing EpsImagePlugin
+[2019-02-21 17:42:40,653] Image.py init line:417 [DEBUG]Importing EpsImagePlugin
+[2019-02-21 17:42:40,675] Image.py init line:417 [DEBUG]Importing FitsStubImagePlugin
+[2019-02-21 17:42:40,675] Image.py init line:417 [DEBUG]Importing FitsStubImagePlugin
+[2019-02-21 17:42:40,675] Image.py init line:417 [DEBUG]Importing FitsStubImagePlugin
+[2019-02-21 17:42:40,676] Image.py init line:417 [DEBUG]Importing FliImagePlugin
+[2019-02-21 17:42:40,676] Image.py init line:417 [DEBUG]Importing FliImagePlugin
+[2019-02-21 17:42:40,676] Image.py init line:417 [DEBUG]Importing FliImagePlugin
+[2019-02-21 17:42:40,677] Image.py init line:417 [DEBUG]Importing FpxImagePlugin
+[2019-02-21 17:42:40,677] Image.py init line:417 [DEBUG]Importing FpxImagePlugin
+[2019-02-21 17:42:40,677] Image.py init line:417 [DEBUG]Importing FpxImagePlugin
+[2019-02-21 17:42:40,679] Image.py init line:420 [DEBUG]Image: failed to import FpxImagePlugin: No module named 'olefile'
+[2019-02-21 17:42:40,679] Image.py init line:420 [DEBUG]Image: failed to import FpxImagePlugin: No module named 'olefile'
+[2019-02-21 17:42:40,679] Image.py init line:420 [DEBUG]Image: failed to import FpxImagePlugin: No module named 'olefile'
+[2019-02-21 17:42:40,680] Image.py init line:417 [DEBUG]Importing FtexImagePlugin
+[2019-02-21 17:42:40,680] Image.py init line:417 [DEBUG]Importing FtexImagePlugin
+[2019-02-21 17:42:40,680] Image.py init line:417 [DEBUG]Importing FtexImagePlugin
+[2019-02-21 17:42:40,681] Image.py init line:417 [DEBUG]Importing GbrImagePlugin
+[2019-02-21 17:42:40,681] Image.py init line:417 [DEBUG]Importing GbrImagePlugin
+[2019-02-21 17:42:40,681] Image.py init line:417 [DEBUG]Importing GbrImagePlugin
+[2019-02-21 17:42:40,682] Image.py init line:417 [DEBUG]Importing GifImagePlugin
+[2019-02-21 17:42:40,682] Image.py init line:417 [DEBUG]Importing GifImagePlugin
+[2019-02-21 17:42:40,682] Image.py init line:417 [DEBUG]Importing GifImagePlugin
+[2019-02-21 17:42:40,692] Image.py init line:417 [DEBUG]Importing GribStubImagePlugin
+[2019-02-21 17:42:40,692] Image.py init line:417 [DEBUG]Importing GribStubImagePlugin
+[2019-02-21 17:42:40,692] Image.py init line:417 [DEBUG]Importing GribStubImagePlugin
+[2019-02-21 17:42:40,693] Image.py init line:417 [DEBUG]Importing Hdf5StubImagePlugin
+[2019-02-21 17:42:40,693] Image.py init line:417 [DEBUG]Importing Hdf5StubImagePlugin
+[2019-02-21 17:42:40,693] Image.py init line:417 [DEBUG]Importing Hdf5StubImagePlugin
+[2019-02-21 17:42:40,695] Image.py init line:417 [DEBUG]Importing IcnsImagePlugin
+[2019-02-21 17:42:40,695] Image.py init line:417 [DEBUG]Importing IcnsImagePlugin
+[2019-02-21 17:42:40,695] Image.py init line:417 [DEBUG]Importing IcnsImagePlugin
+[2019-02-21 17:42:40,698] Image.py init line:417 [DEBUG]Importing IcoImagePlugin
+[2019-02-21 17:42:40,698] Image.py init line:417 [DEBUG]Importing IcoImagePlugin
+[2019-02-21 17:42:40,698] Image.py init line:417 [DEBUG]Importing IcoImagePlugin
+[2019-02-21 17:42:40,699] Image.py init line:417 [DEBUG]Importing ImImagePlugin
+[2019-02-21 17:42:40,699] Image.py init line:417 [DEBUG]Importing ImImagePlugin
+[2019-02-21 17:42:40,699] Image.py init line:417 [DEBUG]Importing ImImagePlugin
+[2019-02-21 17:42:40,701] Image.py init line:417 [DEBUG]Importing ImtImagePlugin
+[2019-02-21 17:42:40,701] Image.py init line:417 [DEBUG]Importing ImtImagePlugin
+[2019-02-21 17:42:40,701] Image.py init line:417 [DEBUG]Importing ImtImagePlugin
+[2019-02-21 17:42:40,703] Image.py init line:417 [DEBUG]Importing IptcImagePlugin
+[2019-02-21 17:42:40,703] Image.py init line:417 [DEBUG]Importing IptcImagePlugin
+[2019-02-21 17:42:40,703] Image.py init line:417 [DEBUG]Importing IptcImagePlugin
+[2019-02-21 17:42:40,705] Image.py init line:417 [DEBUG]Importing JpegImagePlugin
+[2019-02-21 17:42:40,705] Image.py init line:417 [DEBUG]Importing JpegImagePlugin
+[2019-02-21 17:42:40,705] Image.py init line:417 [DEBUG]Importing JpegImagePlugin
+[2019-02-21 17:42:40,713] Image.py init line:417 [DEBUG]Importing Jpeg2KImagePlugin
+[2019-02-21 17:42:40,713] Image.py init line:417 [DEBUG]Importing Jpeg2KImagePlugin
+[2019-02-21 17:42:40,713] Image.py init line:417 [DEBUG]Importing Jpeg2KImagePlugin
+[2019-02-21 17:42:40,714] Image.py init line:417 [DEBUG]Importing McIdasImagePlugin
+[2019-02-21 17:42:40,714] Image.py init line:417 [DEBUG]Importing McIdasImagePlugin
+[2019-02-21 17:42:40,714] Image.py init line:417 [DEBUG]Importing McIdasImagePlugin
+[2019-02-21 17:42:40,715] Image.py init line:417 [DEBUG]Importing MicImagePlugin
+[2019-02-21 17:42:40,715] Image.py init line:417 [DEBUG]Importing MicImagePlugin
+[2019-02-21 17:42:40,715] Image.py init line:417 [DEBUG]Importing MicImagePlugin
+[2019-02-21 17:42:40,720] Image.py init line:420 [DEBUG]Image: failed to import MicImagePlugin: No module named 'olefile'
+[2019-02-21 17:42:40,720] Image.py init line:420 [DEBUG]Image: failed to import MicImagePlugin: No module named 'olefile'
+[2019-02-21 17:42:40,720] Image.py init line:420 [DEBUG]Image: failed to import MicImagePlugin: No module named 'olefile'
+[2019-02-21 17:42:40,720] Image.py init line:417 [DEBUG]Importing MpegImagePlugin
+[2019-02-21 17:42:40,720] Image.py init line:417 [DEBUG]Importing MpegImagePlugin
+[2019-02-21 17:42:40,720] Image.py init line:417 [DEBUG]Importing MpegImagePlugin
+[2019-02-21 17:42:40,727] Image.py init line:417 [DEBUG]Importing MpoImagePlugin
+[2019-02-21 17:42:40,727] Image.py init line:417 [DEBUG]Importing MpoImagePlugin
+[2019-02-21 17:42:40,727] Image.py init line:417 [DEBUG]Importing MpoImagePlugin
+[2019-02-21 17:42:40,729] Image.py init line:417 [DEBUG]Importing MspImagePlugin
+[2019-02-21 17:42:40,729] Image.py init line:417 [DEBUG]Importing MspImagePlugin
+[2019-02-21 17:42:40,729] Image.py init line:417 [DEBUG]Importing MspImagePlugin
+[2019-02-21 17:42:40,730] Image.py init line:417 [DEBUG]Importing PalmImagePlugin
+[2019-02-21 17:42:40,730] Image.py init line:417 [DEBUG]Importing PalmImagePlugin
+[2019-02-21 17:42:40,730] Image.py init line:417 [DEBUG]Importing PalmImagePlugin
+[2019-02-21 17:42:40,732] Image.py init line:417 [DEBUG]Importing PcdImagePlugin
+[2019-02-21 17:42:40,732] Image.py init line:417 [DEBUG]Importing PcdImagePlugin
+[2019-02-21 17:42:40,732] Image.py init line:417 [DEBUG]Importing PcdImagePlugin
+[2019-02-21 17:42:40,738] Image.py init line:417 [DEBUG]Importing PcxImagePlugin
+[2019-02-21 17:42:40,738] Image.py init line:417 [DEBUG]Importing PcxImagePlugin
+[2019-02-21 17:42:40,738] Image.py init line:417 [DEBUG]Importing PcxImagePlugin
+[2019-02-21 17:42:40,738] Image.py init line:417 [DEBUG]Importing PdfImagePlugin
+[2019-02-21 17:42:40,738] Image.py init line:417 [DEBUG]Importing PdfImagePlugin
+[2019-02-21 17:42:40,738] Image.py init line:417 [DEBUG]Importing PdfImagePlugin
+[2019-02-21 17:42:40,753] Image.py init line:417 [DEBUG]Importing PixarImagePlugin
+[2019-02-21 17:42:40,753] Image.py init line:417 [DEBUG]Importing PixarImagePlugin
+[2019-02-21 17:42:40,753] Image.py init line:417 [DEBUG]Importing PixarImagePlugin
+[2019-02-21 17:42:40,756] Image.py init line:417 [DEBUG]Importing PngImagePlugin
+[2019-02-21 17:42:40,756] Image.py init line:417 [DEBUG]Importing PngImagePlugin
+[2019-02-21 17:42:40,756] Image.py init line:417 [DEBUG]Importing PngImagePlugin
+[2019-02-21 17:42:40,756] Image.py init line:417 [DEBUG]Importing PpmImagePlugin
+[2019-02-21 17:42:40,756] Image.py init line:417 [DEBUG]Importing PpmImagePlugin
+[2019-02-21 17:42:40,756] Image.py init line:417 [DEBUG]Importing PpmImagePlugin
+[2019-02-21 17:42:40,759] Image.py init line:417 [DEBUG]Importing PsdImagePlugin
+[2019-02-21 17:42:40,759] Image.py init line:417 [DEBUG]Importing PsdImagePlugin
+[2019-02-21 17:42:40,759] Image.py init line:417 [DEBUG]Importing PsdImagePlugin
+[2019-02-21 17:42:40,761] Image.py init line:417 [DEBUG]Importing SgiImagePlugin
+[2019-02-21 17:42:40,761] Image.py init line:417 [DEBUG]Importing SgiImagePlugin
+[2019-02-21 17:42:40,761] Image.py init line:417 [DEBUG]Importing SgiImagePlugin
+[2019-02-21 17:42:40,763] Image.py init line:417 [DEBUG]Importing SpiderImagePlugin
+[2019-02-21 17:42:40,763] Image.py init line:417 [DEBUG]Importing SpiderImagePlugin
+[2019-02-21 17:42:40,763] Image.py init line:417 [DEBUG]Importing SpiderImagePlugin
+[2019-02-21 17:42:40,769] Image.py init line:417 [DEBUG]Importing SunImagePlugin
+[2019-02-21 17:42:40,769] Image.py init line:417 [DEBUG]Importing SunImagePlugin
+[2019-02-21 17:42:40,769] Image.py init line:417 [DEBUG]Importing SunImagePlugin
+[2019-02-21 17:42:40,796] Image.py init line:417 [DEBUG]Importing TgaImagePlugin
+[2019-02-21 17:42:40,796] Image.py init line:417 [DEBUG]Importing TgaImagePlugin
+[2019-02-21 17:42:40,796] Image.py init line:417 [DEBUG]Importing TgaImagePlugin
+[2019-02-21 17:42:40,810] Image.py init line:417 [DEBUG]Importing TiffImagePlugin
+[2019-02-21 17:42:40,810] Image.py init line:417 [DEBUG]Importing TiffImagePlugin
+[2019-02-21 17:42:40,810] Image.py init line:417 [DEBUG]Importing TiffImagePlugin
+[2019-02-21 17:42:40,811] Image.py init line:417 [DEBUG]Importing WebPImagePlugin
+[2019-02-21 17:42:40,811] Image.py init line:417 [DEBUG]Importing WebPImagePlugin
+[2019-02-21 17:42:40,811] Image.py init line:417 [DEBUG]Importing WebPImagePlugin
+[2019-02-21 17:42:40,821] Image.py init line:417 [DEBUG]Importing WmfImagePlugin
+[2019-02-21 17:42:40,821] Image.py init line:417 [DEBUG]Importing WmfImagePlugin
+[2019-02-21 17:42:40,821] Image.py init line:417 [DEBUG]Importing WmfImagePlugin
+[2019-02-21 17:42:40,826] Image.py init line:417 [DEBUG]Importing XbmImagePlugin
+[2019-02-21 17:42:40,826] Image.py init line:417 [DEBUG]Importing XbmImagePlugin
+[2019-02-21 17:42:40,826] Image.py init line:417 [DEBUG]Importing XbmImagePlugin
+[2019-02-21 17:42:40,834] Image.py init line:417 [DEBUG]Importing XpmImagePlugin
+[2019-02-21 17:42:40,834] Image.py init line:417 [DEBUG]Importing XpmImagePlugin
+[2019-02-21 17:42:40,834] Image.py init line:417 [DEBUG]Importing XpmImagePlugin
+[2019-02-21 17:42:40,858] Image.py init line:417 [DEBUG]Importing XVThumbImagePlugin
+[2019-02-21 17:42:40,858] Image.py init line:417 [DEBUG]Importing XVThumbImagePlugin
+[2019-02-21 17:42:40,858] Image.py init line:417 [DEBUG]Importing XVThumbImagePlugin
+[2019-02-21 17:42:48,599] wechatnotice.py sendMessage line:35 [INFO]message has been send, waiting for next time to start
+[2019-02-21 17:42:48,599] wechatnotice.py sendMessage line:35 [INFO]message has been send, waiting for next time to start
+[2019-02-21 17:42:48,599] wechatnotice.py sendMessage line:35 [INFO]message has been send, waiting for next time to start
+[2019-02-21 17:42:48,599] main.py <module> line:54 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 17:42:48,599] main.py <module> line:54 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 17:42:48,599] main.py <module> line:54 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 17:43:01,694] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742156524&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742156524&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:43:01,694] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742156524&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742156524&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:43:01,694] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742156524&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742156524&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:43:26,748] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742181698&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742181698&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:43:26,748] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742181698&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742181698&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:43:26,748] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742181698&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742181698&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:43:51,804] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742206749&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742206749&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:43:51,804] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742206749&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742206749&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:43:51,804] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742206749&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742206749&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:43:59,610] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 17:43:59,610] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 17:43:59,610] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 17:43:59,612] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 17:43:59,612] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 17:43:59,612] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 17:43:59,619] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): www.nike.com
+[2019-02-21 17:43:59,619] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): www.nike.com
+[2019-02-21 17:43:59,619] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): www.nike.com
+[2019-02-21 17:43:59,676] connectionpool.py _make_request line:396 [DEBUG]https://www.nike.com:443 "GET /cn/launch/?s=upcoming HTTP/1.1" 200 None
+[2019-02-21 17:43:59,676] connectionpool.py _make_request line:396 [DEBUG]https://www.nike.com:443 "GET /cn/launch/?s=upcoming HTTP/1.1" 200 None
+[2019-02-21 17:43:59,676] connectionpool.py _make_request line:396 [DEBUG]https://www.nike.com:443 "GET /cn/launch/?s=upcoming HTTP/1.1" 200 None
+[2019-02-21 17:43:59,703] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 17:43:59,703] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 17:43:59,703] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 17:43:59,704] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,704] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,704] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,708] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,708] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,708] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,765] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51600
+[2019-02-21 17:43:59,765] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51600
+[2019-02-21 17:43:59,765] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51600
+[2019-02-21 17:43:59,789] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 17:43:59,789] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 17:43:59,789] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 17:43:59,790] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,790] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,790] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,793] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,793] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,793] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,840] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41374
+[2019-02-21 17:43:59,840] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41374
+[2019-02-21 17:43:59,840] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41374
+[2019-02-21 17:43:59,849] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 17:43:59,849] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 17:43:59,849] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 17:43:59,850] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,850] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,850] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,854] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,854] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,854] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,888] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52760
+[2019-02-21 17:43:59,888] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52760
+[2019-02-21 17:43:59,888] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52760
+[2019-02-21 17:43:59,898] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 17:43:59,898] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 17:43:59,898] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 17:43:59,900] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,900] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,900] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,906] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,906] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,906] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,936] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 34302
+[2019-02-21 17:43:59,936] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 34302
+[2019-02-21 17:43:59,936] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 34302
+[2019-02-21 17:43:59,943] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 17:43:59,943] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 17:43:59,943] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 17:43:59,943] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,943] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,943] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,948] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,948] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,948] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,982] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 58085
+[2019-02-21 17:43:59,982] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 58085
+[2019-02-21 17:43:59,982] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 58085
+[2019-02-21 17:43:59,991] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 17:43:59,991] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 17:43:59,991] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 17:43:59,991] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,991] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,991] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:43:59,995] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,995] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:43:59,995] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,038] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52223
+[2019-02-21 17:44:00,038] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52223
+[2019-02-21 17:44:00,038] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 52223
+[2019-02-21 17:44:00,049] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 17:44:00,049] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 17:44:00,049] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 17:44:00,050] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,050] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,050] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,055] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,055] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,055] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,114] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41858
+[2019-02-21 17:44:00,114] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41858
+[2019-02-21 17:44:00,114] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 41858
+[2019-02-21 17:44:00,125] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 17:44:00,125] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 17:44:00,125] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 17:44:00,126] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,126] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,126] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,129] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,129] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,129] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,172] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44217
+[2019-02-21 17:44:00,172] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44217
+[2019-02-21 17:44:00,172] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44217
+[2019-02-21 17:44:00,183] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 17:44:00,183] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 17:44:00,183] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 17:44:00,184] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,184] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,184] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,187] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,187] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,187] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,220] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 56239
+[2019-02-21 17:44:00,220] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 56239
+[2019-02-21 17:44:00,220] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 56239
+[2019-02-21 17:44:00,228] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 17:44:00,228] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 17:44:00,228] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 17:44:00,229] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,229] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,229] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,232] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,232] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,232] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,278] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44564
+[2019-02-21 17:44:00,278] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44564
+[2019-02-21 17:44:00,278] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44564
+[2019-02-21 17:44:00,289] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 17:44:00,289] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 17:44:00,289] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 17:44:00,289] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,289] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,289] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,293] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,293] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,293] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,345] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 59872
+[2019-02-21 17:44:00,345] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 59872
+[2019-02-21 17:44:00,345] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 59872
+[2019-02-21 17:44:00,358] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 17:44:00,358] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 17:44:00,358] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 17:44:00,359] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,359] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,359] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,363] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,363] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,363] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,423] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47982
+[2019-02-21 17:44:00,423] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47982
+[2019-02-21 17:44:00,423] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47982
+[2019-02-21 17:44:00,435] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 17:44:00,435] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 17:44:00,435] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 17:44:00,436] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,436] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,436] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,440] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,440] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,440] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,496] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47313
+[2019-02-21 17:44:00,496] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47313
+[2019-02-21 17:44:00,496] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47313
+[2019-02-21 17:44:00,509] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 17:44:00,509] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 17:44:00,509] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 17:44:00,510] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,510] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,510] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,514] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,514] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,514] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,556] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 60454
+[2019-02-21 17:44:00,556] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 60454
+[2019-02-21 17:44:00,556] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 60454
+[2019-02-21 17:44:00,567] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 17:44:00,567] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 17:44:00,567] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 17:44:00,568] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,568] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,568] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,571] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,571] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,571] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,616] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44835
+[2019-02-21 17:44:00,616] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44835
+[2019-02-21 17:44:00,616] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 44835
+[2019-02-21 17:44:00,627] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 17:44:00,627] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 17:44:00,627] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 17:44:00,628] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,628] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,628] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,631] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,631] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,631] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,686] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47040
+[2019-02-21 17:44:00,686] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47040
+[2019-02-21 17:44:00,686] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 47040
+[2019-02-21 17:44:00,699] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 17:44:00,699] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 17:44:00,699] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 17:44:00,700] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,700] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,700] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 17:44:00,704] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,704] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,704] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): secure-images.nike.com
+[2019-02-21 17:44:00,738] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51132
+[2019-02-21 17:44:00,738] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51132
+[2019-02-21 17:44:00,738] connectionpool.py _make_request line:396 [DEBUG]https://secure-images.nike.com:443 "GET /is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1 HTTP/1.1" 200 51132
+[2019-02-21 17:44:00,762] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 17:44:00,762] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 17:44:00,762] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 17:44:00,763] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 17:44:00,763] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 17:44:00,763] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 17:44:00,763] webspider.py data_analysis line:92 [INFO]the number of updated:1
+[2019-02-21 17:44:00,763] webspider.py data_analysis line:92 [INFO]the number of updated:1
+[2019-02-21 17:44:00,763] webspider.py data_analysis line:92 [INFO]the number of updated:1
+[2019-02-21 17:44:16,856] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742231806&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742231806&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:44:16,856] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742231806&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742231806&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:44:16,856] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742231806&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742231806&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:44:36,829] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 17:44:36,829] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 17:44:36,829] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 17:44:36,834] connectionpool.py _get_conn line:243 [DEBUG]Resetting dropped connection: wx2.qq.com
+[2019-02-21 17:44:36,834] connectionpool.py _get_conn line:243 [DEBUG]Resetting dropped connection: wx2.qq.com
+[2019-02-21 17:44:36,834] connectionpool.py _get_conn line:243 [DEBUG]Resetting dropped connection: wx2.qq.com
+[2019-02-21 17:44:37,178] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsendmsg HTTP/1.1" 200 109
+[2019-02-21 17:44:37,178] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsendmsg HTTP/1.1" 200 109
+[2019-02-21 17:44:37,178] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsendmsg HTTP/1.1" 200 109
+[2019-02-21 17:44:37,183] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742256858&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742256858&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:44:37,183] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742256858&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742256858&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:44:37,183] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631418%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742256858&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742256858&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:44:37,241] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): file.wx2.qq.com
+[2019-02-21 17:44:37,241] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): file.wx2.qq.com
+[2019-02-21 17:44:37,241] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (1): file.wx2.qq.com
+[2019-02-21 17:44:37,350] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsync?sid=glSDMhmLdjLu2ysu&skey=@crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&pass_ticket=K63lHM2p070aAfv1v%2FJxqN09o538mqtX25jT%2BZXivkLia31EhubM7WrpFYFMG0YV HTTP/1.1" 200 365
+[2019-02-21 17:44:37,350] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsync?sid=glSDMhmLdjLu2ysu&skey=@crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&pass_ticket=K63lHM2p070aAfv1v%2FJxqN09o538mqtX25jT%2BZXivkLia31EhubM7WrpFYFMG0YV HTTP/1.1" 200 365
+[2019-02-21 17:44:37,350] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsync?sid=glSDMhmLdjLu2ysu&skey=@crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&pass_ticket=K63lHM2p070aAfv1v%2FJxqN09o538mqtX25jT%2BZXivkLia31EhubM7WrpFYFMG0YV HTTP/1.1" 200 365
+[2019-02-21 17:44:37,479] connectionpool.py _make_request line:396 [DEBUG]https://file.wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxuploadmedia?f=json HTTP/1.1" 200 821
+[2019-02-21 17:44:37,479] connectionpool.py _make_request line:396 [DEBUG]https://file.wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxuploadmedia?f=json HTTP/1.1" 200 821
+[2019-02-21 17:44:37,479] connectionpool.py _make_request line:396 [DEBUG]https://file.wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxuploadmedia?f=json HTTP/1.1" 200 821
+[2019-02-21 17:44:37,741] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631419%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742277357&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742277357&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:44:37,741] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631419%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742277357&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742277357&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:44:37,741] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631419%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742277357&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742277357&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:44:37,750] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (2): wx2.qq.com
+[2019-02-21 17:44:37,750] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (2): wx2.qq.com
+[2019-02-21 17:44:37,750] connectionpool.py _new_conn line:824 [DEBUG]Starting new HTTPS connection (2): wx2.qq.com
+[2019-02-21 17:44:37,759] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsendmsgimg?fun=async&f=json HTTP/1.1" 200 109
+[2019-02-21 17:44:37,759] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsendmsgimg?fun=async&f=json HTTP/1.1" 200 109
+[2019-02-21 17:44:37,759] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsendmsgimg?fun=async&f=json HTTP/1.1" 200 109
+[2019-02-21 17:44:37,760] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes16.jpg
+[2019-02-21 17:44:37,760] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes16.jpg
+[2019-02-21 17:44:37,760] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes16.jpg
+[2019-02-21 17:44:37,762] wechatnotice.py sendMessage line:35 [INFO]message has been send, waiting for next time to start
+[2019-02-21 17:44:37,762] wechatnotice.py sendMessage line:35 [INFO]message has been send, waiting for next time to start
+[2019-02-21 17:44:37,762] wechatnotice.py sendMessage line:35 [INFO]message has been send, waiting for next time to start
+[2019-02-21 17:44:37,763] main.py <module> line:54 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 17:44:37,763] main.py <module> line:54 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 17:44:37,763] main.py <module> line:54 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 17:44:38,058] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsync?sid=glSDMhmLdjLu2ysu&skey=@crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&pass_ticket=K63lHM2p070aAfv1v%2FJxqN09o538mqtX25jT%2BZXivkLia31EhubM7WrpFYFMG0YV HTTP/1.1" 200 366
+[2019-02-21 17:44:38,058] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsync?sid=glSDMhmLdjLu2ysu&skey=@crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&pass_ticket=K63lHM2p070aAfv1v%2FJxqN09o538mqtX25jT%2BZXivkLia31EhubM7WrpFYFMG0YV HTTP/1.1" 200 366
+[2019-02-21 17:44:38,058] connectionpool.py _make_request line:396 [DEBUG]https://wx2.qq.com:443 "POST /cgi-bin/mmwebwx-bin/webwxsync?sid=glSDMhmLdjLu2ysu&skey=@crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&pass_ticket=K63lHM2p070aAfv1v%2FJxqN09o538mqtX25jT%2BZXivkLia31EhubM7WrpFYFMG0YV HTTP/1.1" 200 366
+[2019-02-21 17:45:03,129] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742278076&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742278076&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:45:03,129] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742278076&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742278076&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:45:03,129] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742278076&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742278076&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:45:28,203] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742303133&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742303133&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:45:28,203] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742303133&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742303133&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:45:28,203] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742303133&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742303133&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:45:53,270] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742328207&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742328207&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:45:53,270] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742328207&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742328207&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:45:53,270] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742328207&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742328207&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:46:18,345] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742353275&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742353275&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:46:18,345] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742353275&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742353275&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 17:46:18,345] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742353275&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742353275&deviceid=e460003337277183 HTTP/1.1" 200 43
