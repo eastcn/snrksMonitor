@@ -4,6 +4,7 @@ east
 
 import yaml
 import requests
+import re
 from lxml import html
 from SnrksMonitor.log import Logger
 
@@ -33,12 +34,12 @@ class WebSpider:
         return configdata
 
     def download_imgage(self, url, fileurl):
-        log.info('start download image：%s' % url)
+        # log.debug('start download image：%s' % url)
         r = requests.get(url=url)
         with open(fileurl, 'wb') as f:
             f.write(r.content)
         # print('图片保存地址为：%s' % fileurl)
-        log.info('the image save in：%s' % fileurl)
+        # log.info('the image save in：%s' % fileurl)
         f.close()
 
     def spider(self, url, useragent, timeout):
@@ -60,29 +61,41 @@ class WebSpider:
         shoes_div = s.xpath('//figure[@class="d-md-h ncss-col-sm-12 va-sm-t pb0-sm prl0-sm"]')
         fileindex = 0
         for shoes in shoes_div:
-            self.datadict = []
-            shoes_name = shoes.xpath('.//h3[@class="ncss-brand u-uppercase mb-1-sm fs16-sm"]/text()')[1]
-            shoes_img = shoes.xpath('.//img/@src')
+            # shoes_name = shoes.xpath('.//h3[@class="ncss-brand u-uppercase mb-1-sm fs16-sm"]/text()')[1] # 鞋名
+            shoes_link = shoes.xpath('.//a[@class="card-link d-sm-b"]/@href') # 鞋子详情连接
+            shoes_name = self.get_shoes_name(sc=shoes_link[0])
+            shoes_price = self.get_shoes_price(sc=shoes_link[0],header=header,timeout=timeout) # 价格
+            shoes_img = shoes.xpath('.//img/@src') # 图片
+            shoes_sale_num = self.get_sale_num(sc=shoes_img[0])# 货号
             fileurl = './img/shoes%s.jpg' % fileindex
-            self.download_imgage(url=shoes_img[0], fileurl=fileurl)
-            shoes_time = shoes.xpath('.//h6//div/text()')
+            self.download_imgage(url=shoes_img[0], fileurl=fileurl) # 下载图片
+            shoes_time = shoes.xpath('.//h6//div/text()') # 时间
+            shoes_method = self.get_shoes_method(s=shoes_time[0]) # 抽签方式
             shoes_dict = {}
             shoes_dict.update({
                 'name': shoes_name,
                 'img': fileurl,
                 'time': shoes_time,
-                'country': 'cn'
+                'country': 'cn',
+                'sale_num' : shoes_sale_num,
+                'price': shoes_price,
+                'method': shoes_method
             })
             self.datadict.append(shoes_dict)
             fileindex += 1
 
-    def data_analysis(self, update):
-        # data check
-        # print('开始记录是否有更新')
+    def data_analysis(self, up):
+        """
+        分析是否有更新
+        :param up:
+        :return: 返回更新数据
+        """
         log.info('start checking whether updated or not')
+        update = up
         if len(self.history) == 0:
             for shoes in self.datadict:
                 self.history.append(shoes)
+                update = self.history
         elif len(self.history) > 0:
             for shoes in self.datadict:
                 if shoes in self.history:
@@ -93,7 +106,64 @@ class WebSpider:
         log.info('the number of updated:%s' % len(update))
         return update
 
-# if __name__ == '__main__':
-#     run = WebSpider()
-#     run.spider()
-#     print(run.data_analysis())
+    def get_sale_num(self,sc):
+        """
+        :param sc:
+        :return: 获取货号
+        """
+        pattern =re.compile('Com/.+_A')
+        a = pattern.findall(sc)
+        b = a[0][4:-2]
+        return b
+
+    def get_shoes_name(self, sc):
+        """
+        :param sc:链接url
+        :return: 详细鞋名
+        """
+        pattern = re.compile('t/.+/')
+        a = pattern.findall(sc)
+        b = a[0][2:-1].replace('-',' ')
+        return b
+
+    def get_shoes_price(self,sc,header,timeout):
+        """
+        获取价格
+        :param sc:连接地址
+        :return: 返回价格
+        """
+        url = 'https://www.nike.com' + sc
+        try:
+            r = requests.get(url=url,headers=header,timeout=timeout)
+        except TimeoutError:
+            log.info('connect to product detail failed')
+        etree = html.etree
+        s = etree.HTML (r.text)
+        price = s.xpath('//div[@class="ncss-brand pb6-sm fs14-sm fs16-md"]/text()')
+        return price
+
+    def test_get_shoes_price(self):
+        url = 'https://www.nike.com/cn/launch/t/air-jordan-6-retro-nrg-black-dark-concord/'
+        header = {
+            'User_Agents': "Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10"
+        }
+        WebSpider ().get_shoes_price (sc=url, header=header, timeout=30)
+
+    def get_shoes_method(self,s):
+        """
+        :param s:发售时间
+        :return: 抽签方式
+        """
+        method =''
+        if '发售' in s:
+            method = '小抽签'
+        else:
+            method = '大抽签'
+        return method
+
+if __name__ == '__main__':
+    url = 'https://www.nike.com/cn/launch/t/air-jordan-6-retro-nrg-black-dark-concord/'
+    header = {
+        'User_Agents': "Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10"
+    }
+    WebSpider().get_shoes_price(sc=url,header=header,timeout=30)

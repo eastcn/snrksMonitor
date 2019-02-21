@@ -40,22 +40,26 @@ if __name__ == '__main__':
     push = notice.wechat()
     push.login()
     chatroomid = push.getChatRoomId(nickname=chatroomnickname)
+    num = 1
     while True:
         # 获取网站内容和分析
-        num = 1
         update = []
         log.info('starting No.{} check'.format(num))
         try:
             data.spider(url=config_url, useragent=config_useragent, timeout=timeout)
         except TimeoutError:
             log.error('nike time out')
-        msg = data.data_analysis(update=update)
+        msg = data.data_analysis(up=update)
         if len(msg) > 0:
             log.info('No.{} start pushing'.format(num))
-            push.sendMessage(msg=msg, user=chatroomid)
+            if num > 1:
+                push.sendMessage(msg=msg, user=chatroomid)
+            else:
+                log.info ('It is the first time to spider,so it does not push ')
         else:
             log.info('No.{} no update'.format(num))
         log.info('No.{} is over,it will sleep {} seconds'.format(num, sleeptime))
-        time.sleep(sleeptime)  # 暂停时间
         num += 1
+        time.sleep(sleeptime)  # 暂停时间
+
 

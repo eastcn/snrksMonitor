@@ -10,13 +10,13 @@ class Logger:
     """自定义封装logging模块"""
 
     def __init__(self, default_level=logging.INFO, logger_name=None):
+        self.logger = logging.getLogger ('aaaa')
         # 初始化一个logger
-        self.logger = logging.getLogger(logger_name)
         self.default_level = default_level
         logger_main_level, logger_file_level, logger_console_level = self.config()
         self.logger.setLevel(logger_main_level)
         fomatter = logging.Formatter(
-            '[%(asctime)s] %(filename)s %(funcName)s line:%(lineno)d [%(levelname)s]%(message)s')
+            '[%(asctime)s] %(filename)s line:%(lineno)d [%(levelname)s]%(message)s')
         # 初始化输出到日志文件的handle
         file_name = './log/{}log.txt'.format(datetime.datetime.now().strftime('%Y-%m-%d'))
         file_log = logging.FileHandler(filename=file_name, encoding='utf-8')
@@ -27,10 +27,11 @@ class Logger:
         console_log.setLevel(logger_console_level)
         console_log.setFormatter(fomatter)
 
-        self.logger.addHandler(file_log)
-        self.logger.addHandler(console_log)
-        self.logger.removeHandler(file_log)
-        self.logger.removeHandler(console_log)
+        if self.logger.hasHandlers() is False:
+            self.logger.addHandler(file_log)
+            self.logger.addHandler(console_log)
+        # self.logger.removeHandler(file_log)
+        # self.logger.removeHandler(console_log)
         file_log.close()
         console_log.close()
 

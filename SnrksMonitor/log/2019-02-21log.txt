@@ -1198,3 +1198,610 @@
 [2019-02-21 17:46:18,345] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742353275&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742353275&deviceid=e460003337277183 HTTP/1.1" 200 43
 [2019-02-21 17:46:18,345] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742353275&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742353275&deviceid=e460003337277183 HTTP/1.1" 200 43
 [2019-02-21 17:46:18,345] connectionpool.py _make_request line:396 [DEBUG]https://webpush.wx2.qq.com:443 "GET /cgi-bin/mmwebwx-bin/synccheck?synckey=1_676630898%7C2_676631421%7C3_676630663%7C11_676630895%7C201_1550741879%7C203_1550678870%7C1000_1550735881%7C1001_1550735955&r=1550742353275&uin=573267107&sid=glSDMhmLdjLu2ysu&skey=%40crypt_dc51435b_6dc4445bdd9b0ff78c45fc1f2c029165&_=1550742353275&deviceid=e460003337277183 HTTP/1.1" 200 43
+[2019-02-21 23:09:30,197] main.py <module> line:30 [INFO]3
+[2019-02-21 23:09:30,197] main.py <module> line:30 [INFO]3
+[2019-02-21 23:09:30,197] main.py <module> line:30 [INFO]3
+[2019-02-21 23:16:33,140] main.py <module> line:30 [INFO]3
+[2019-02-21 23:23:32,401] wechatnotice.py getChatRoomId line:45 [INFO]get chat room “Tobe,再也不听风了。” id successfully的ID：@@f42ddb0368da55db3d018b6670be81254f9f6db39d4cddf31bd85e5c5ff098fe
+[2019-02-21 23:23:32,402] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:23:32,402] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:23:32,627] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:23:32,627] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:32,788] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:23:32,788] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:32,935] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:23:32,935] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:33,069] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:23:33,070] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:33,196] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:23:33,197] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:33,338] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:23:33,338] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:33,487] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:23:33,488] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:33,626] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:23:33,626] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:33,745] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:23:33,745] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:33,899] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:23:33,899] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:34,031] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:23:34,032] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:34,183] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:23:34,183] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:34,324] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:23:34,324] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:34,456] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:23:34,456] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:34,599] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:23:34,600] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:34,738] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:23:34,738] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:34,873] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:23:34,874] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:23:35,019] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:23:35,020] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 23:23:35,021] webspider.py data_analysis line:93 [INFO]the number of updated:0
+[2019-02-21 23:23:35,021] main.py <module> line:57 [INFO]No.1 no update
+[2019-02-21 23:23:35,021] main.py <module> line:58 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 23:26:25,887] wechatnotice.py getChatRoomId line:45 [INFO]get chat room “Tobe,再也不听风了。” id successfully的ID：@@f42ddb0368da55db3d018b6670be81254f9f6db39d4cddf31bd85e5c5ff098fe
+[2019-02-21 23:26:25,902] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:26:25,904] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:26:27,098] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:26:27,099] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:27,269] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:26:27,269] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:27,409] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:26:27,410] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:27,577] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:26:27,577] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:28,232] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:26:28,233] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:28,990] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:26:28,991] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:29,134] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:26:29,134] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:29,258] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:26:29,259] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:30,041] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:26:30,042] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:30,191] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:26:30,192] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:30,332] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:26:30,332] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:30,466] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:26:30,466] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:30,590] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:26:30,590] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:30,716] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:26:30,717] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:30,873] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:26:30,873] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:31,033] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:26:31,033] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:31,167] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:26:31,168] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:26:31,297] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:26:31,297] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 23:26:31,297] webspider.py data_analysis line:93 [INFO]the number of updated:0
+[2019-02-21 23:26:31,297] main.py <module> line:57 [INFO]No.1 no update
+[2019-02-21 23:26:31,298] main.py <module> line:58 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 23:26:59,982] wechatnotice.py getChatRoomId line:45 [INFO]get chat room “Tobe,再也不听风了。” id successfully的ID：@@f42ddb0368da55db3d018b6670be81254f9f6db39d4cddf31bd85e5c5ff098fe
+[2019-02-21 23:26:59,995] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:27:00,004] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:27:00,254] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:27:00,254] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:00,421] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:27:00,421] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:00,553] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:27:00,554] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:00,729] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:27:00,729] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:00,845] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:27:00,846] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:00,996] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:27:00,996] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:01,145] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:27:01,145] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:01,267] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:27:01,268] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:01,383] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:27:01,384] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:01,521] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:27:01,521] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:01,658] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:27:01,659] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:01,803] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:27:01,803] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:01,961] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:27:01,961] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:02,129] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:27:02,129] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:02,268] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:27:02,268] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:02,390] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:27:02,391] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:02,526] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:27:02,526] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:02,641] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:27:02,642] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 23:27:02,642] webspider.py data_analysis line:93 [INFO]the number of updated:0
+[2019-02-21 23:27:02,642] main.py <module> line:57 [INFO]No.1 no update
+[2019-02-21 23:27:02,642] main.py <module> line:58 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 23:27:58,068] wechatnotice.py getChatRoomId line:45 [INFO]get chat room “Tobe,再也不听风了。” id successfully的ID：@@f42ddb0368da55db3d018b6670be81254f9f6db39d4cddf31bd85e5c5ff098fe
+[2019-02-21 23:27:58,083] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:27:58,084] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:27:58,318] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:27:58,319] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:58,491] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:27:58,492] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:58,623] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:27:58,623] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:58,800] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:27:58,800] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:58,924] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:27:58,924] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:59,103] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:27:59,103] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:59,270] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:27:59,270] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:59,401] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:27:59,402] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:59,780] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:27:59,781] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:27:59,952] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:27:59,952] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:28:00,089] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:28:00,089] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:28:00,228] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:28:00,228] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:28:00,368] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:28:00,368] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:28:00,503] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:28:00,504] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:28:00,660] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:28:00,661] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:28:00,784] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:28:00,785] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:28:01,215] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:28:01,215] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:28:01,354] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:28:01,354] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 23:28:01,354] webspider.py data_analysis line:93 [INFO]the number of updated:0
+[2019-02-21 23:43:55,148] wechatnotice.py getChatRoomId line:45 [INFO]get chat room “Tobe,再也不听风了。” id successfully的ID：@@f42ddb0368da55db3d018b6670be81254f9f6db39d4cddf31bd85e5c5ff098fe
+[2019-02-21 23:43:55,165] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:43:55,165] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:43:55,414] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:43:55,415] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:55,595] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:43:55,595] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:55,721] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:43:55,722] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:55,872] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:43:55,872] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:56,342] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:43:56,343] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:56,503] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:43:56,503] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:56,645] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:43:56,645] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:56,775] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:43:56,775] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:56,899] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:43:56,900] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:57,037] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:43:57,038] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:57,159] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:43:57,160] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:57,304] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:43:57,305] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:57,443] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:43:57,443] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:57,589] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:43:57,590] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:57,893] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:43:57,894] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:43:58,024] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:43:58,024] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:01,243] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:44:01,244] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:01,367] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:44:29,700] wechatnotice.py getChatRoomId line:45 [INFO]get chat room “Tobe,再也不听风了。” id successfully的ID：@@f42ddb0368da55db3d018b6670be81254f9f6db39d4cddf31bd85e5c5ff098fe
+[2019-02-21 23:44:29,715] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:44:29,717] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:44:29,946] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:44:29,947] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:30,124] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:44:30,125] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:30,254] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:44:30,255] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:30,381] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:44:30,382] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:30,523] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:44:30,523] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:30,671] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:44:30,671] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:31,934] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:44:31,935] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:32,075] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:44:32,075] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:32,199] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:44:32,200] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:32,392] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:44:32,392] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:32,533] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:44:32,534] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:33,053] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:44:33,054] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:33,192] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:44:33,192] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:33,317] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:44:33,317] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:33,454] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:44:33,455] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:33,578] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:44:33,578] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:33,705] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:44:33,706] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:44:33,833] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:44:33,835] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 23:44:51,787] webspider.py data_analysis line:95 [INFO]the number of updated:1
+[2019-02-21 23:45:11,599] main.py <module> line:54 [INFO]No.1 start pushing
+[2019-02-21 23:45:19,825] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:45:27,172] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes16.jpg
+[2019-02-21 23:45:27,177] wechatnotice.py sendMessage line:35 [INFO]message has been send, waiting for next time to start
+[2019-02-21 23:45:27,177] main.py <module> line:58 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 23:45:54,281] wechatnotice.py getChatRoomId line:45 [INFO]get chat room “Tobe,再也不听风了。” id successfully的ID：@@f42ddb0368da55db3d018b6670be81254f9f6db39d4cddf31bd85e5c5ff098fe
+[2019-02-21 23:45:54,298] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:45:54,299] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:45:54,559] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:45:54,560] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:54,718] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:45:54,719] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:54,843] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:45:54,843] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:54,988] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:45:54,989] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:55,123] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:45:55,123] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:55,280] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:45:55,281] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:55,433] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:45:55,434] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:55,572] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:45:55,572] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:55,708] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:45:55,708] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:55,853] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:45:55,853] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:55,985] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:45:55,985] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:56,114] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:45:56,114] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:56,251] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:45:56,251] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:56,389] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:45:56,389] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:56,538] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:45:56,539] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:56,665] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:45:56,665] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:56,793] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:45:56,793] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:45:56,921] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:45:56,923] webspider.py data_analysis line:82 [INFO]start checking whether updated or not
+[2019-02-21 23:53:02,039] wechatnotice.py getChatRoomId line:45 [INFO]get chat room “Tobe,再也不听风了。” id successfully的ID：@@f42ddb0368da55db3d018b6670be81254f9f6db39d4cddf31bd85e5c5ff098fe
+[2019-02-21 23:53:02,056] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:53:02,056] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:53:02,290] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:53:02,290] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:02,453] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:53:02,453] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:02,577] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:53:02,578] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:02,753] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:53:02,753] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:02,885] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:53:02,886] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:03,036] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:53:03,036] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:03,174] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:53:03,175] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:03,294] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:53:03,295] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:03,432] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:53:03,432] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:03,573] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:53:03,573] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:03,702] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:53:03,702] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:03,839] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:53:03,839] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:03,986] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:53:03,986] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:04,121] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:53:04,122] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:04,652] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:53:04,652] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:04,780] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:53:04,780] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:04,929] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:53:04,929] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:53:05,722] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:53:05,724] webspider.py data_analysis line:81 [INFO]start checking whether updated or not
+[2019-02-21 23:53:12,215] webspider.py data_analysis line:94 [INFO]the number of updated:17
+[2019-02-21 23:53:38,991] main.py <module> line:54 [INFO]No.1 start pushing
+[2019-02-21 23:53:43,612] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:44,914] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes0.jpg
+[2019-02-21 23:53:44,925] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:45,721] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes1.jpg
+[2019-02-21 23:53:45,722] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:46,720] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes2.jpg
+[2019-02-21 23:53:46,724] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:47,400] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes3.jpg
+[2019-02-21 23:53:47,406] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:48,802] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes4.jpg
+[2019-02-21 23:53:48,808] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:49,767] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes5.jpg
+[2019-02-21 23:53:49,768] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:50,752] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes6.jpg
+[2019-02-21 23:53:50,757] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:51,754] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes7.jpg
+[2019-02-21 23:53:51,760] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:52,697] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes8.jpg
+[2019-02-21 23:53:52,706] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:53,587] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes9.jpg
+[2019-02-21 23:53:53,587] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:54,566] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes10.jpg
+[2019-02-21 23:53:54,567] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:55,540] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes11.jpg
+[2019-02-21 23:53:55,542] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:56,722] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes12.jpg
+[2019-02-21 23:53:56,729] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:57,805] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes13.jpg
+[2019-02-21 23:53:57,807] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:58,765] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes14.jpg
+[2019-02-21 23:53:58,766] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:59,071] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes15.jpg
+[2019-02-21 23:53:59,072] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:53:59,523] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes16.jpg
+[2019-02-21 23:53:59,524] wechatnotice.py sendMessage line:35 [INFO]message has been send, waiting for next time to start
+[2019-02-21 23:53:59,525] main.py <module> line:58 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-21 23:54:59,525] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:54:59,525] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:54:59,744] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:54:59,745] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:54:59,917] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:54:59,917] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:00,042] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:55:00,042] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:00,189] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:55:00,189] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:00,323] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:55:00,324] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:01,096] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:55:01,097] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:01,229] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:55:01,230] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:01,350] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:55:01,350] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:01,466] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:55:01,466] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:01,603] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:55:01,604] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:01,728] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:55:01,728] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:01,898] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:55:01,899] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:02,022] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:55:02,023] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:02,149] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:55:02,150] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:02,298] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:55:02,299] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:02,423] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:55:02,423] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:02,574] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:55:02,574] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:55:02,734] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:55:02,736] webspider.py data_analysis line:81 [INFO]start checking whether updated or not
+[2019-02-21 23:59:26,845] wechatnotice.py getChatRoomId line:45 [INFO]get chat room “Tobe,再也不听风了。” id successfully的ID：@@f42ddb0368da55db3d018b6670be81254f9f6db39d4cddf31bd85e5c5ff098fe
+[2019-02-21 23:59:26,863] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-21 23:59:26,863] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-21 23:59:27,065] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-21 23:59:27,066] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:27,256] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-21 23:59:27,257] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:27,403] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-21 23:59:27,403] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:27,529] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-21 23:59:27,529] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:27,671] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-21 23:59:27,672] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:27,802] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-21 23:59:27,803] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:28,471] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-21 23:59:28,471] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:28,597] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-21 23:59:28,597] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:28,716] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-21 23:59:28,716] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:28,848] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-21 23:59:28,849] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:28,969] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-21 23:59:28,969] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:29,106] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-21 23:59:29,106] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:29,243] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-21 23:59:29,244] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:29,379] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-21 23:59:29,379] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:29,547] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-21 23:59:29,547] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:29,679] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-21 23:59:29,680] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:29,810] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-21 23:59:29,810] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-21 23:59:29,946] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-21 23:59:29,948] webspider.py data_analysis line:81 [INFO]start checking whether updated or not
+[2019-02-21 23:59:32,272] webspider.py data_analysis line:94 [INFO]the number of updated:17
+[2019-02-21 23:59:52,472] main.py <module> line:54 [INFO]No.1 start pushing
+[2019-02-21 23:59:53,354] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-21 23:59:57,827] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes0.jpg
+[2019-02-21 23:59:57,828] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:03,255] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes1.jpg
+[2019-02-22 00:00:03,266] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:07,367] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes2.jpg
+[2019-02-22 00:00:07,376] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:08,693] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes3.jpg
+[2019-02-22 00:00:08,700] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:11,524] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes4.jpg
+[2019-02-22 00:00:11,534] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:14,285] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes5.jpg
+[2019-02-22 00:00:14,309] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:16,843] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes6.jpg
+[2019-02-22 00:00:16,844] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:20,348] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes7.jpg
+[2019-02-22 00:00:20,349] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:22,905] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes8.jpg
+[2019-02-22 00:00:22,906] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:25,840] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes9.jpg
+[2019-02-22 00:00:25,841] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:27,935] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes10.jpg
+[2019-02-22 00:00:27,942] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:31,236] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes11.jpg
+[2019-02-22 00:00:31,242] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:33,306] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes12.jpg
+[2019-02-22 00:00:33,306] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:34,830] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes13.jpg
+[2019-02-22 00:00:34,833] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:00:39,980] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes14.jpg
+[2019-02-22 00:00:39,987] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:01:08,024] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes15.jpg
+[2019-02-22 00:01:08,026] wechatnotice.py sendMessage line:26 [INFO]start sending image
+[2019-02-22 00:01:32,045] wechatnotice.py sendMessage line:31 [INFO]delete image:./img/shoes16.jpg
+[2019-02-22 00:01:32,049] wechatnotice.py sendMessage line:35 [INFO]message has been send, waiting for next time to start
+[2019-02-22 00:01:32,051] main.py <module> line:58 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-22 00:02:32,053] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-22 00:02:32,055] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-22 00:02:32,359] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-22 00:02:32,360] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:32,567] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-22 00:02:32,568] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:32,734] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-22 00:02:32,736] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:32,935] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-22 00:02:32,937] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:33,119] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-22 00:02:33,120] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:33,813] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-22 00:02:33,814] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:33,998] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-22 00:02:33,999] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:34,179] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-22 00:02:34,180] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:34,348] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-22 00:02:34,349] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:34,536] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-22 00:02:34,538] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:34,712] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-22 00:02:34,714] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:34,938] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-22 00:02:34,940] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:35,107] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-22 00:02:35,108] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:36,145] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-22 00:02:36,146] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:36,356] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-22 00:02:36,357] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:36,514] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-22 00:02:36,516] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:36,697] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-22 00:02:36,698] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:02:36,858] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-22 00:02:36,862] webspider.py data_analysis line:81 [INFO]start checking whether updated or not
+[2019-02-22 00:03:03,261] webspider.py data_analysis line:94 [INFO]the number of updated:0
+[2019-02-22 00:03:19,959] main.py <module> line:57 [INFO]No.1 no update
+[2019-02-22 00:03:19,961] main.py <module> line:58 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-22 00:04:19,963] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-22 00:04:19,964] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-22 00:04:20,242] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-22 00:04:20,244] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:20,487] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-22 00:04:20,489] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:20,655] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-22 00:04:20,657] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:20,837] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-22 00:04:20,839] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:20,994] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-22 00:04:20,995] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:21,180] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-22 00:04:21,181] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:21,375] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-22 00:04:21,376] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:21,531] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-22 00:04:21,533] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:21,717] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-22 00:04:21,719] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:21,903] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-22 00:04:21,904] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:22,068] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-22 00:04:22,069] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:22,242] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-22 00:04:22,244] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:22,422] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-22 00:04:22,423] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:22,586] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-22 00:04:22,587] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:22,758] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-22 00:04:22,760] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:23,256] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-22 00:04:23,257] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:23,427] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-22 00:04:23,428] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:04:23,601] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-22 00:04:23,605] webspider.py data_analysis line:81 [INFO]start checking whether updated or not
+[2019-02-22 00:04:31,796] webspider.py data_analysis line:94 [INFO]the number of updated:0
+[2019-02-22 00:04:33,843] main.py <module> line:57 [INFO]No.1 no update
+[2019-02-22 00:04:33,844] main.py <module> line:58 [INFO]No.1 is over,it will sleep 60 seconds
+[2019-02-22 00:05:33,846] main.py <module> line:47 [INFO]starting No.1 check
+[2019-02-22 00:05:33,847] webspider.py spider line:54 [INFO]start connect to nike
+[2019-02-22 00:05:34,120] webspider.py spider line:59 [INFO]start analysis nike'website
+[2019-02-22 00:05:34,122] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR2257_005_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:34,326] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes0.jpg
+[2019-02-22 00:05:34,327] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:34,492] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes1.jpg
+[2019-02-22 00:05:34,493] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AQ9129_601_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:34,670] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes2.jpg
+[2019-02-22 00:05:34,672] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:34,833] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes3.jpg
+[2019-02-22 00:05:34,835] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AH7767_101_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:35,012] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes4.jpg
+[2019-02-22 00:05:35,013] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/921733_015_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:35,202] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes5.jpg
+[2019-02-22 00:05:35,333] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ9044_600_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:35,498] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes6.jpg
+[2019-02-22 00:05:35,499] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/307960_405_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:35,660] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes7.jpg
+[2019-02-22 00:05:35,661] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO2444_400_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:36,219] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes8.jpg
+[2019-02-22 00:05:36,220] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:36,393] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes9.jpg
+[2019-02-22 00:05:36,395] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/CI1517_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:36,573] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes10.jpg
+[2019-02-22 00:05:36,575] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_200_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:36,750] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes11.jpg
+[2019-02-22 00:05:36,752] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AR8555_100_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:36,902] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes12.jpg
+[2019-02-22 00:05:36,904] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/BQ6827_001_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:37,093] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes13.jpg
+[2019-02-22 00:05:37,094] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_103_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:37,251] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes14.jpg
+[2019-02-22 00:05:37,252] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO3108_500_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:37,421] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes15.jpg
+[2019-02-22 00:05:37,423] webspider.py download_imgage line:36 [INFO]start download image：https://secure-images.nike.com/is/image/DotCom/AO1741_700_A_PREM?$SNKRS_COVER_WD$&align=0,1
+[2019-02-22 00:05:37,577] webspider.py download_imgage line:41 [INFO]the image save in：./img/shoes16.jpg
+[2019-02-22 00:05:37,581] webspider.py data_analysis line:81 [INFO]start checking whether updated or not
+[2019-02-22 00:06:09,611] webspider.py data_analysis line:94 [INFO]the number of updated:0
+[2019-02-22 00:06:09,612] main.py <module> line:57 [INFO]No.1 no update
+[2019-02-22 00:06:09,613] main.py <module> line:58 [INFO]No.1 is over,it will sleep 60 seconds
