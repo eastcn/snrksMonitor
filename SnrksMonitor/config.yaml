@@ -42,3 +42,12 @@ chatroomnickname: "Tobe,再也不听风了。"
 monitortime: 60
 
 maxtimeout: 30
+logConfig:
+  testLogLevel:
+    mainLogLevel: DEBUG
+    fileLogLevel: DEBUG
+    consoleLogLevel: DEBUG
+  productLogLevel:
+    mainLogLevel: INFO
+    fileLogLevel: INFO
+    consoleLogLevel: ERROR
