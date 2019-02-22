@@ -51,11 +51,22 @@ if __name__ == '__main__':
             log.error('nike time out')
         msg = data.data_analysis(up=update)
         if len(msg) > 0:
+            i = 1
+            for item in msg:
+                log.info('start downloading NO.{} pictures'.format(i))
+                data.download_imgage(url=item['img_url'], fileurl=item['img'])
+                i += 1
             log.info('No.{} start pushing'.format(num))
+
             if num > 1:
                 push.sendMessage(msg=msg, user=chatroomid)
             else:
-                log.info ('It is the first time to spider,so it does not push ')
+                log.info('It is the first time to spider,so it does not push ')
+                msg = {
+                    'msg': "兄弟们好，你们准备好开冲了吗？",
+                    'img': './img/go.jpg'
+                }
+                push.sendMessage(msg=msg, user=chatroomid)
         else:
             log.info('No.{} no update'.format(num))
         log.info('No.{} is over,it will sleep {} seconds'.format(num, sleeptime))

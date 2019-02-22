@@ -9,8 +9,8 @@ import datetime
 class Logger:
     """自定义封装logging模块"""
 
-    def __init__(self, default_level=logging.INFO, logger_name=None):
-        self.logger = logging.getLogger ('aaaa')
+    def __init__(self, default_level=logging.INFO):
+        self.logger = logging.getLogger('__name__')
         # 初始化一个logger
         self.default_level = default_level
         logger_main_level, logger_file_level, logger_console_level = self.config()

@@ -22,16 +22,25 @@ class wechat():
 
     def sendMessage(self, msg, user):
         # 在群聊中发送推送并且删除图片
-        for item in msg:
-            log.info('start sending image')
-            message = '国家[%s] %s %s' % (item['country'], item['name'], item['time'])
-            itchat.send_msg(msg=message, toUserName=user)
-            itchat.send_image(fileDir=item['img'], toUserName=user)
-            try:
-                log.info('delete image:%s' % item['img'])
-                os.remove(path=item['img'])
-            except IOError:
-                log.error('delete failed')
+        if type(msg) == list:
+            for item in msg:
+                log.info('start sending image')
+                message = '国家[%s] %s %s 货号[%s] 价格[%s] 抽签方式[%s]' % (item['country'], item['name'], item['time'],
+                                                                   item['sale_num'], item['price'], item['method'])
+                itchat.send_msg(msg=message, toUserName=user)
+                itchat.send_image(fileDir=item['img'], toUserName=user)
+                try:
+                    log.info('delete image:%s' % item['img'])
+                    os.remove(path=item['img'])
+                except IOError:
+                    log.error('delete failed')
+        elif type(msg) == str:
+            itchat.send_msg(msg=msg, toUserName=user)
+        elif type(msg) == dict:
+            itchat.send_msg(msg=msg['msg'], toUserName=user)
+            itchat.send_image(fileDir=msg['img'], toUserName=user)
+        else:
+            itchat.send_msg(msg=msg, toUserName=user)
         log.info('message has been send, waiting for next time to start')
 
     def getChatRoomId(self, nickname):
@@ -44,7 +53,6 @@ class wechat():
                 chatroomid = item['UserName']
         log.info('get chat room “%s” id successfully的ID：%s' % (nickname, chatroomid))
         return chatroomid
-
 
 # if __name__ == '__main__':
 #     groupid = ''
