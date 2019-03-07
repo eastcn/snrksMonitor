@@ -43,17 +43,16 @@ if __name__ == '__main__':
     num = 1
     while True:
         # 获取网站内容和分析
-        update = []
         log.info('starting No.{} check'.format(num))
         try:
             data.spider(url=config_url, useragent=config_useragent, timeout=timeout)
         except TimeoutError:
             log.error('nike time out')
-        msg = data.data_analysis(up=update)
+        msg = data.data_analysis()
         if len(msg) > 0:
             i = 1
             for item in msg:
-                log.info('start downloading NO.{} pictures'.format(i))
+                log.info('start downloading [{}] pictures'.format(item['sale_num']))
                 data.download_imgage(url=item['img_url'], fileurl=item['img'])
                 i += 1
             log.info('No.{} start pushing'.format(num))

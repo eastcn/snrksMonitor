@@ -34,12 +34,21 @@ class WebSpider:
 
     def download_imgage(self, url, fileurl):
         # log.debug('start download image：%s' % url)
-        r = requests.get(url=url)
-        with open(fileurl, 'wb') as f:
-            f.write(r.content)
+        try:
+            r = requests.get(url=url)
+            with open (fileurl, 'wb') as f:
+                f.write (r.content)
+                f.close ()
+        except Exception:
+            log.error('failed to download picture')
+            with open('./img/go.jpg','wb') as fa:
+                content = fa.read()
+                with open(fileurl,'wb') as fb:
+                    fb.write(content)
+                    fb.close()
+                fa.close()
         # print('图片保存地址为：%s' % fileurl)
         # log.info('the image save in：%s' % fileurl)
-        f.close()
 
     def spider(self, url, useragent, timeout):
         # 爬取snrks网站内容
@@ -61,7 +70,6 @@ class WebSpider:
         fileindex = 1  # 计数
         log.info("get shoes' data")
         for shoes in shoes_div:
-            log.info('get No.{} shoes'.format(fileindex))
             # shoes_name = shoes.xpath('.//h3[@class="ncss-brand u-uppercase mb-1-sm fs16-sm"]/text()')[1] # 鞋名
             shoes_link = shoes.xpath('.//a[@class="card-link d-sm-b"]/@href')  # 鞋子详情连接
             shoes_name = self.get_shoes_name(sc=shoes_link[0])
@@ -85,15 +93,16 @@ class WebSpider:
             })
             self.datadict.append(shoes_dict)
             fileindex += 1
+            log.info('get [{}] shoes'.format(shoes_sale_num))
 
-    def data_analysis(self, up):
+    def data_analysis(self):
         """
         分析是否有更新
         :param up:
         :return: 返回更新数据
         """
         log.info('start checking whether updated or not')
-        update = up
+        update = []
         if len(self.history) == 0:
             for shoes in self.datadict:
                 self.history.append(shoes)
@@ -104,6 +113,8 @@ class WebSpider:
                     pass
                 elif shoes not in self.history:
                     update.append(shoes)
+            self.history = self.datadict
+            self.datadict = []
 
         log.info('the number of updated:%s' % len(update))
         return update
@@ -135,10 +146,12 @@ class WebSpider:
         :return: 返回价格
         """
         url = 'https://www.nike.com' + sc
+        price = ''
         try:
             r = requests.get(url=url, headers=header, timeout=timeout)
-        except TimeoutError:
+        except Exception:
             log.info('connect to product detail failed')
+            price = '暂无'
         etree = html.etree
         s = etree.HTML(r.text)
         price = s.xpath('//div[@class="ncss-brand pb6-sm fs14-sm fs16-md"]/text()')

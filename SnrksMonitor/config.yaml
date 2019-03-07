@@ -37,9 +37,9 @@ User_Agents: [
 "Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10"
 ]
 
-chatroomnickname: "snkrs官方交流群"
+chatroomnickname: "好好学习天天向上"
 
-monitortime: 60
+monitortime: 120
 
 maxtimeout: 30
 logConfig:
@@ -51,3 +51,7 @@ logConfig:
     mainLogLevel: INFO
     fileLogLevel: INFO
     consoleLogLevel: ERROR
+
+db:
+  db_path: ./SnrksDataBase.db
+  table_name: shoes
