@@ -54,6 +54,12 @@ class wechat():
         log.info('get chat room “%s” id successfully的ID：%s' % (nickname, chatroomid))
         return chatroomid
 
+    def init(self,groupname):
+        self.login()
+        groupid = self.getChatRoomId(nickname=groupname)
+        return groupid
+
+
 # if __name__ == '__main__':
 #     groupid = ''
 #     msg = ''

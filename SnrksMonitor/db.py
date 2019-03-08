@@ -3,8 +3,9 @@ create to db
 """
 import sqlite3
 import yaml
-from SnrksMonitor import log
+from SnrksMonitor.log import Logger
 
+log = Logger().log()
 
 class db:
     def __init__(self):
@@ -15,7 +16,7 @@ class db:
             configdata = yaml.load(f)
         except IOError:
             # logging.log('open config failed')
-            print('open config failed')
+            log.info('open config failed')
 
         self.databasePath = configdata['db']['db_path']
         self.table_name = configdata['db']['table_name']
@@ -52,11 +53,11 @@ class db:
             cu = self.getCursor(conn)
             cu.execute(sql)
             conn.commit()
-            print('数据库创建成功')
+            log.info('数据库创建成功')
             cu.close()
             conn.close()
         else:
-            print('sql不正确')
+            log.info('sql不正确')
 
     def dropTable(self, table):
         """
@@ -68,7 +69,7 @@ class db:
         dropSql = """DROP TABLE {}""".format(table)
         cu.execute(dropSql)
         conn.commit()
-        print('数据库表{}删除成功'.format(table))
+        log.info('数据库表{}删除成功'.format(table))
         cu.close()
         conn.close()
 
@@ -88,11 +89,11 @@ class db:
                     conn.commit()
                 cu.close()
                 conn.close()
-                print('插入成功')
+                log.info('数据库数据插入成功')
             else:
-                print('没有数据')
+                log.info('没有数据')
         else:
-            print('没有sql')
+            log.info('没有sql')
 
     def fetchData(self, sql, c):
         """
@@ -108,10 +109,10 @@ class db:
             conn.close()
             return value
         else:
-            print('sql为空')
+            log.info('sql为空')
             return 'failed'
 
-    def deleteData(self, c, sql, d):
+    def deleteData(self, sql):
         """
         删除数据
         :param c:
@@ -120,18 +121,19 @@ class db:
         :return:
         """
         if sql is not None and sql != ' ':
-            conn = self.getConn(c)
-            cu = self.getConn(conn)
-            for data in d:
-                cu.execute(sql)
-                conn.commit()
+            conn = self.getConn(None)
+            cu = self.getCursor(conn)
+            cu.execute(sql)
+            conn.commit()
             cu.close()
             conn.close()
+            log.info('数据库中数据删除成功')
         else:
-            print('sql为空')
+            log.info('sql为空')
 
     def init(self):
-        createTableSql = """CREATE TABLE 'shoes'('id' int(10) NOT NULL PRIMARY KEY,
+        createTableSql = """CREATE TABLE 'shoes'(
+                            'id' INTEGER PRIMARY KEY AUTOINCREMENT,
                             'shoename' varchar (30),
 		                    'shoeColor' varchar (30), 
 		                    'shoeImageUrl' varchar (100),
@@ -144,21 +146,65 @@ class db:
         self.createTable(c=None, sql=createTableSql)
 
 
+    def updateShoesTable(self, data):
+        """
+        对鞋子表进行更新
+        :param data:
+        :return:
+        """
+        # 删除鞋子表中的数据
+        deleteShoesSql = """DELETE FROM shoes where id < 1000"""
+        log.info('鞋子的久数据删除中')
+        self.deleteData(sql=deleteShoesSql)
+        log.info('鞋子的久数据删除完成')
+        # 把最新的数据插入鞋子库
+        log.info('鞋子的最新数据插入中')
+        insertSql = """INSERT INTO shoes values (?,?,?,?,?,?,?,?,?)"""
+        insertData = []
+        # 把传进来的字典数据 转成插入数据库的数据tulble
+        for item in data:
+            dataturple = (
+                item['id'],
+                item ['shoeName'],
+                item ['shoeColor'],
+                item ['shoeImageUrl'],
+                item ['shoeStyleCode'],
+                item ['shoeSelectMethod'],
+                item ['shoePrice'],
+                item ['shoeSize'],
+                item ['shoePublishTime']
+            )
+            insertData.append (dataturple)
+        self.insertData (sql=insertSql, d=insertData)
+        log.info('鞋子的最新数据插入成功')
+
 if __name__ == '__main__':
     db = db()
+    createTableSql = """CREATE TABLE 'update'(
+                                'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+                                'shoename' varchar (30),
+    		                    'shoeColor' varchar (30), 
+    		                    'shoeImageUrl' varchar (100),
+    		                    'shoeStyleCode' varchar (50), 
+    		                    'shoeSelectMethod' varchar (20),
+                                'shoePrice' varchar (10),
+                                'shoeSize' varchar (100),
+                                'shoePublishTime' varchar (100)
+                                )"""
+    db.createTable(c=None, sql= createTableSql)
     # db.init()
-    insertSql = """INSERT INTO shoes values (?,?,?,?,?,?,?,?,?)"""
-    insertData = [
-        (
-            1, 'shoeName', '1asd/asd/asd', 'https://23123123', 'abc-123123',
-            'leo',
-            '1299',
-            '1,2,3,4,5,6,7',
-            '2019-2-19 9:00'
-        )
-    ]
-    db.insertData(sql=insertSql, d=insertData)
-
-    fetchSql = """SELECT * FROM shoes"""
-    data = db.fetchData(sql=fetchSql, c=None)
-    print(data) 
+    # insertSql = """INSERT INTO shoes values (?,?,?,?,?,?,?,?,?)"""
+    # insertData = [
+    #     (
+    #         1, 'shoeName', '1asd/asd/asd', 'https://23123123', 'abc-123123',
+    #         'leo',
+    #         '1299',
+    #         '1,2,3,4,5,6,7',
+    #         '2019-2-19 9:00'
+    #     )
+    # ]
+    # db.insertData(sql=insertSql, d=insertData)
+    #
+    # fetchSql = """SELECT * FROM shoes"""
+    # data = db.fetchData(sql=fetchSql, c=None)
+    # log.info(data)

@@ -7,6 +7,8 @@ import yaml
 import random
 import time
 from SnrksMonitor.log import Logger
+from SnrksMonitor.db import db
+from SnrksMonitor.appspider import AppSpiders
 
 log = Logger().log()
 
@@ -27,48 +29,48 @@ class Utils:
 
 
 if __name__ == '__main__':
-    # 获取配置
-    history = []
+    """
+    启动整个脚本
+    """
+    log.info ('East SnrksMonitor is starting')
+    # 从配置中获取超时，爬虫间隔，微信群组名字
     u = Utils().readyaml()
-    config_url = u['url']
-    config_useragent = random.choice(u['User_Agents'])
     timeout = u['maxtimeout']
     sleeptime = u['monitortime']
     chatroomnickname = u['chatroomnickname']
-    msg = ''
-    data = crawl.WebSpider()
-    push = notice.wechat()
-    push.login()
-    chatroomid = push.getChatRoomId(nickname=chatroomnickname)
-    num = 1
-    while True:
-        # 获取网站内容和分析
-        log.info('starting No.{} check'.format(num))
-        try:
-            data.spider(url=config_url, useragent=config_useragent, timeout=timeout)
-        except TimeoutError:
-            log.error('nike time out')
-        msg = data.data_analysis()
-        if len(msg) > 0:
-            i = 1
-            for item in msg:
-                log.info('start downloading [{}] pictures'.format(item['sale_num']))
-                data.download_imgage(url=item['img_url'], fileurl=item['img'])
-                i += 1
-            log.info('No.{} start pushing'.format(num))
 
-            if num > 1:
-                push.sendMessage(msg=msg, user=chatroomid)
-            else:
-                log.info('It is the first time to spider,so it does not push ')
-                msg = {
-                    'msg': "兄弟们好，你们准备好开冲了吗？",
-                    'img': './img/go.jpg'
-                }
-                push.sendMessage(msg=msg, user=chatroomid)
+    # 登录微信 并返回群组id
+    push = notice.wechat()
+    chatroomid = push.init(groupname=chatroomnickname)
+    num = 1
+
+    # 实例化爬虫类
+    shoesdata = AppSpiders()
+    db =db()
+    while True:
+        log.info ('第{}次开始'.format (num))
+        # 初始化鞋子，删除更新表
+        shoesdata.initDB ()  # 初始化
+        NewData = shoesdata.spiderDate () # 获取到最新的数据
+        result = shoesdata.updateCheck (data=NewData) # 获取到是否有更新和更新数据
+        log.info('第{}次是否有更新：{}'.format(num,result['isUpdate']))
+        # 如果有更新则对更新表进行操作，并发送推送
+        if result['isUpdate'] is True:
+            # 对更新表进行操作
+            updateData = result ['data']
+            shoesdata.insertToDb (data=updateData)
+            # 给微信群发送推送
+            for updatedata in updateData:
+                log.info ('第{}次更新的货号：{}'.format (num, updatedata['shoeStyleCode']))
+                pass
+                # push.sendMessage()
+            # 对保存鞋子数据的表进行更新
+            db.updateShoesTable(data=NewData)
         else:
-            log.info('No.{} no update'.format(num))
-        log.info('No.{} is over,it will sleep {} seconds'.format(num, sleeptime))
+            # 是否需要操作？
+            pass
+
+        log.info ('第{}次结束'.format(num))
         num += 1
         time.sleep(sleeptime)  # 暂停时间
 
