@@ -56,9 +56,20 @@ class AppSpiders:
 			responceJson = json.loads (responce.text)
 			shoes = responceJson ['threads']
 		except (KeyError,TimeoutError):
-			responce = requests.get (self.url, headers=self.headers)
-			responceJson = json.loads (responce.text)
-			shoes = responceJson ['threads']
+			isSuccess = False
+			failedNum = 1
+			while isSuccess == False:
+				log.info('获取接口失败，正在重试第{}次......'.format(failedNum))
+				responce = requests.get (self.url, headers=self.headers)
+				responceJson = json.loads (responce.text)
+				if 'threads' in responceJson.keys():
+					shoes = responceJson ['threads']
+					log.info('重试成功，正在恢复')
+					isSuccess = True
+
+				else:
+					failedNum += 1
+
 		shoesData = []
 		n = 1
 		for shoe in shoes:
