@@ -51,9 +51,14 @@ class AppSpiders:
         :return: 返回出来一个数组，包含前50条的鞋子数据
         """
 		log.info('最新的数据获取中...')
-		responce = requests.get (self.url, headers=self.headers)
-		responceJson = json.loads (responce.text)
-		shoes = responceJson ['threads']
+		try:
+			responce = requests.get (self.url, headers=self.headers)
+			responceJson = json.loads (responce.text)
+			shoes = responceJson ['threads']
+		except (KeyError,TimeoutError):
+			responce = requests.get (self.url, headers=self.headers)
+			responceJson = json.loads (responce.text)
+			shoes = responceJson ['threads']
 		shoesData = []
 		n = 1
 		for shoe in shoes:
@@ -65,6 +70,7 @@ class AppSpiders:
 					'id'              : n,
 					'shoeName'        : shoe ['name'],
 					'shoeImageUrl'    : shoe ['imageUrl'],
+					'shoeImage'       : None,
 					'shoeColor'       : '',
 					'shoeStyleCode'   : '',
 					'shoeSelectMethod': '',
@@ -85,6 +91,7 @@ class AppSpiders:
 					'shoeName'        : shoe ['name'],
 					'shoeColor'       : product ['colorDescription'],
 					'shoeImageUrl'    : product ['imageUrl'],
+					'shoeImage'       : None,
 					'shoeStyleCode'   : "{}-{}".format (product ['style'], product ['colorCode']),
 					'shoeSelectMethod': selector,
 					'shoePrice'       : product ['price'] ['msrp'],
@@ -105,26 +112,36 @@ class AppSpiders:
 		log.info('数据更新确认中...')
 		fetchSql = """SELECT shoeStyleCode FROM shoes"""
 		OldData = self.db.fetchData(sql=fetchSql,c=None)
-		OldDataList = []
-		for olddata in OldData:
-			OldDataList.append(olddata[0])
-		isUpdate = False
-		updateData = []
-		for newdata in data:
-			if newdata['shoeStyleCode'] not in OldDataList:
-				updateData.append(newdata)
-				isUpdate = True
-		message ={
-			'isUpdate': isUpdate,
-			'data': updateData
-		}
-		log.info('数据更新确认完成')
+		if len(OldData) == 0:
+			self.db.updateShoesTable(data=data)
+			message = {
+				'isUpdate': False,
+				'data'    : 'no data'
+			}
+		else:
+			OldDataList = []
+			for olddata in OldData:
+				OldDataList.append(olddata[0])
+			isUpdate = False
+			updateData = []
+			for newdata in data:
+				if newdata['shoeStyleCode'] not in OldDataList:
+					updateData.append(newdata)
+					# 把更新的鞋子的图片下载到本地并把url改为本地url
+					newdata['shoeImage'] = self.download_imgage(url=newdata['shoeImageUrl'],filename=newdata['shoeStyleCode'])
+					newdata['id'] = None
+					isUpdate = True
+			message ={
+				'isUpdate': isUpdate,
+				'data': updateData
+			}
+			log.info('数据更新确认完成')
 		return message
 
 
 	def insertToDb(self,data):
 		log.info('向更新表中插入数据中...')
-		insertSql = """INSERT INTO "update" values (?,?,?,?,?,?,?,?,?)"""
+		insertSql = """INSERT INTO "update" values (?,?,?,?,?,?,?,?,?,?)"""
 		insertData = []
 		for item in data:
 			dataturple = (
@@ -132,6 +149,7 @@ class AppSpiders:
 				item['shoeName'],
 				item['shoeColor'],
 				item['shoeImageUrl'],
+				item['shoeImage'],
 				item['shoeStyleCode'],
 				item['shoeSelectMethod'],
 				item['shoePrice'],
@@ -147,6 +165,30 @@ class AppSpiders:
 		self.db.deleteData(sql=deleteSql)
 		log.info('初始化更新表完成...')
 
+
+	def download_imgage (self, url, filename):
+		"""
+		用于下载图片，并返回图片url
+		:param url: 图片的网络地址
+		:param filename: 需要存放在本地的图片名字
+		:return: 返回本地的图片地址
+		"""
+		log.debug('start download image：%s' % filename)
+		fileurl = './img/{}.jpg'.format(filename)
+		try:
+			r = requests.get (url=url)
+			with open (fileurl, 'wb') as f:
+				f.write (r.content)
+				f.close ()
+		except Exception:
+			log.error ('failed to download picture')
+			with open ('./img/go.jpg', 'wb') as fa:
+				content = fa.read ()
+				with open (fileurl, 'wb') as fb:
+					fb.write (content)
+					fb.close ()
+				fa.close ()
+		return fileurl
 
 if __name__ == '__main__':
 	shoesdata = AppSpiders () # 实例化鞋子爬虫的类

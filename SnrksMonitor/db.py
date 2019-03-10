@@ -66,7 +66,7 @@ class db:
         """
         conn = self.getConn(None)
         cu = self.getCursor(conn)
-        dropSql = """DROP TABLE {}""".format(table)
+        dropSql = """DROP TABLE '{}' """.format(table)
         cu.execute(dropSql)
         conn.commit()
         log.info('数据库表{}删除成功'.format(table))
@@ -137,6 +137,7 @@ class db:
                             'shoename' varchar (30),
 		                    'shoeColor' varchar (30), 
 		                    'shoeImageUrl' varchar (100),
+		                    'shoeImage' varchar(100),
 		                    'shoeStyleCode' varchar (50), 
 		                    'shoeSelectMethod' varchar (20),
                             'shoePrice' varchar (10),
@@ -153,13 +154,13 @@ class db:
         :return:
         """
         # 删除鞋子表中的数据
-        deleteShoesSql = """DELETE FROM shoes where id < 1000"""
-        log.info('鞋子的久数据删除中')
-        self.deleteData(sql=deleteShoesSql)
-        log.info('鞋子的久数据删除完成')
+        # deleteShoesSql = """DELETE FROM shoes where id < 1000"""
+        # log.info('鞋子的久数据删除中')
+        # self.deleteData(sql=deleteShoesSql)
+        # log.info('鞋子的久数据删除完成')
         # 把最新的数据插入鞋子库
-        log.info('鞋子的最新数据插入中')
-        insertSql = """INSERT INTO shoes values (?,?,?,?,?,?,?,?,?)"""
+        log.info('更新的鞋子数据插入中')
+        insertSql = """INSERT INTO shoes values (?,?,?,?,?,?,?,?,?,?)"""
         insertData = []
         # 把传进来的字典数据 转成插入数据库的数据tulble
         for item in data:
@@ -168,6 +169,7 @@ class db:
                 item ['shoeName'],
                 item ['shoeColor'],
                 item ['shoeImageUrl'],
+                item ['shoeImage'],
                 item ['shoeStyleCode'],
                 item ['shoeSelectMethod'],
                 item ['shoePrice'],
@@ -180,11 +182,15 @@ class db:
 
 if __name__ == '__main__':
     db = db()
+    db.dropTable(table='shoes')
+    #db.dropTable(table='update')
+    db.init()
     createTableSql = """CREATE TABLE 'update'(
                                 'id' INTEGER PRIMARY KEY AUTOINCREMENT,
                                 'shoename' varchar (30),
     		                    'shoeColor' varchar (30), 
     		                    'shoeImageUrl' varchar (100),
+    		                    'shoeImage' varchar(100),
     		                    'shoeStyleCode' varchar (50), 
     		                    'shoeSelectMethod' varchar (20),
                                 'shoePrice' varchar (10),

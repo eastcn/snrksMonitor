@@ -60,16 +60,17 @@ if __name__ == '__main__':
             updateData = result ['data']
             shoesdata.insertToDb (data=updateData)
             # 给微信群发送推送
+            updateShoesCodeList = []
             for updatedata in updateData:
-                log.info ('第{}次更新的货号：{}'.format (num, updatedata['shoeStyleCode']))
-                pass
+                updateShoesCodeList.append(updatedata['shoeStyleCode'])
+            log.info ('第{}次更新的货号：{}'.format (num, updateShoesCodeList))
+            push.sendMessage(user=chatroomid,msg=updateData)
                 # push.sendMessage()
-            # 对保存鞋子数据的表进行更新
-            db.updateShoesTable(data=NewData)
+            # 把有更新的数据插入鞋子表
+            db.updateShoesTable(data=updateData)
         else:
             # 是否需要操作？
-            pass
-
+            log.info('第{}次没有更新，进入暂停'.format(num))
         log.info ('第{}次结束'.format(num))
         num += 1
         time.sleep(sleeptime)  # 暂停时间
