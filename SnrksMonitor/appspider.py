@@ -75,10 +75,11 @@ class AppSpiders:
 					shoes = responceJson ['threads']
 					log.info('重试成功，正在恢复')
 					isSuccess = True
-
+				elif failedNum ==30 :
+					shoes = []
+					break
 				else:
 					failedNum += 1
-
 		shoesData = []
 		for shoe in shoes:
 			""" 从接口中获取到一双鞋子的数据 包括pass """
