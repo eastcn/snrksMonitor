@@ -25,7 +25,12 @@ class wechat():
 		if type(msg) == list:
 			for item in msg:
 				log.info('开始向群聊中发送消息')
-				message = '国家:[{}] [{}]  发售：[{}]  货号：[{}]  价格：[{}] 抽签方式：[{}]  库存：[{}] '.format('天朝', item['shoeName'], item['shoePublishTime'],item['shoeStyleCode'], item['shoePrice'], item['shoeSelectMethod'],item['shoeSize'])
+				if item['shoePublishTime'] is None:
+					message = '国家:[{}] [{}] '.format (item ['shoeCountry'], item ['shoeName'])
+				else:
+					message = '国家:[{}] [{}]  发售：[{}]  货号：[{}]  价格：[{}] 抽签方式：[{}]  库存：[{}] '.format(
+							item['shoeCountry'], item['shoeName'],item['shoePublishTime'],item['shoeStyleCode'],
+							item['shoePrice'], item['shoeSelectMethod'],item['shoeSize'])
 				itchat.send_msg(msg=message, toUserName=user)
 				itchat.send_image(fileDir=item['shoeImage'], toUserName=user)
 				log.info('推送完成')

@@ -45,13 +45,13 @@ def run():
 	db = database()
 	while True:
 		log.info ('第{}次开始'.format (num))
-		# 初始化鞋子，删除更新表
-		shoesdata.initDB ()  # 初始化
 		NewData = shoesdata.getNewShoesData()  # 获取到最新的数据
 		result = shoesdata.updateCheck (data=NewData)  # 获取到是否有更新和更新数据
 		log.info ('第{}次是否有更新：{}'.format (num, result ['isUpdate']))
 		# 如果有更新则对更新表进行操作，并发送推送
 		if result ['isUpdate'] is True:
+			# 初始化鞋子，删除更新表
+			shoesdata.initDB ()  # 初始化
 			# 对更新表进行操作
 			updateData = result ['data']
 			shoesdata.insertToDb (data=updateData)

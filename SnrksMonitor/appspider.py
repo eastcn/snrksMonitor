@@ -258,7 +258,7 @@ class AppSpiders:
 		log.info('向更新表中插入数据结束')
 
 	def initDB(self):
-		deleteSql = """DELETE FROM "update" where id < 50"""
+		deleteSql = """DELETE FROM "update" where id < 100000"""
 		self.db.deleteData(sql=deleteSql)
 		log.info('初始化更新表完成...')
 
