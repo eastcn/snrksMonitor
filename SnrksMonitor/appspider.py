@@ -12,6 +12,7 @@ https://api.nike.com/launch/launch_views/v2?filter=productId("productid")
 import json
 import random
 import yaml
+import time
 from SnrksMonitor.log import Logger
 from SnrksMonitor.db import db
 import requests
@@ -21,10 +22,16 @@ log = Logger().log()
 
 class AppSpiders:
 	def __init__ (self):
-		self.url = 'https://api.nike.com/snkrs/content/v1/?&country=CN&language=zh-Hans&offset=0&orderBy=published'
+		self.url = {
+			'cn' : 'https://api.nike.com/snkrs/content/v1/?&country=CN&language=zh-Hans&offset=0&orderBy=published',
+			'de' : 'https://api.nike.com/snkrs/content/v1/?country=DE&language=de&offset=0&orderBy=published',
+			'us' : 'https://api.nike.com/snkrs/content/v1/?country=US&language=en&offset=0&orderBy=published',
+			'jp' : 'https://api.nike.com/snkrs/content/v1/?country=JP&language=ja&offset=0&orderBy=published'
+		}
+
 		self.entry = 'https://api.nike.com/launch/entries/v2'
 		useragent = random.choice (self.readyaml () ['User_Agents'])
-		# auth = Utils.readyaml()['auth']
+		# auth = self.readyaml()['auth']
 		self.headers = {
 			'User_Agents': useragent
 			# 'Authorization': auth
@@ -44,15 +51,17 @@ class AppSpiders:
 		return configdata
 
 
-	def spiderDate (self):
+	def spiderDate (self,country):
 		"""
         通过snrks的首页接口获取到首页最新放送的鞋子数据
         名字+颜色 图片 货号 发售方式 价格 库存码数 发售时间
         :return: 返回出来一个数组，包含前50条的鞋子数据
         """
 		log.info('最新的数据获取中...')
+		url = self.url[country]
+		global shoes
 		try:
-			responce = requests.get (self.url, headers=self.headers)
+			responce = requests.get (url, headers=self.headers)
 			responceJson = json.loads (responce.text)
 			shoes = responceJson ['threads']
 		except (KeyError,TimeoutError):
@@ -60,7 +69,7 @@ class AppSpiders:
 			failedNum = 1
 			while isSuccess == False:
 				log.info('获取接口失败，正在重试第{}次......'.format(failedNum))
-				responce = requests.get (self.url, headers=self.headers)
+				responce = requests.get (url, headers=self.headers)
 				responceJson = json.loads (responce.text)
 				if 'threads' in responceJson.keys():
 					shoes = responceJson ['threads']
@@ -71,14 +80,13 @@ class AppSpiders:
 					failedNum += 1
 
 		shoesData = []
-		n = 1
 		for shoe in shoes:
 			""" 从接口中获取到一双鞋子的数据 包括pass """
 			product = shoe ['product']
 			shoeStyle = product ['style']
 			if shoeStyle == '999999':
 				shoeDict = {
-					'id'              : n,
+					'id'              : None,
 					'shoeName'        : shoe ['name'],
 					'shoeImageUrl'    : shoe ['imageUrl'],
 					'shoeImage'       : None,
@@ -87,7 +95,8 @@ class AppSpiders:
 					'shoeSelectMethod': '',
 					'shoePrice'       : '',
 					'shoeSize'        : '',
-					'shoePublishTime' : ''
+					'shoePublishTime' : '',
+					'shoeCountry'     : country
 				}
 			else:
 				shoeSize = ''
@@ -97,8 +106,10 @@ class AppSpiders:
 					selector = product ['selectionEngine']
 				except KeyError:
 					selector = None
+				t= product ['startSellDate'] [:19].replace ('T', ' ')
+				shoeTime = self.changeTime(t=t,c=country)
 				shoeDict = {
-					'id'              : n,
+					'id'              : None,
 					'shoeName'        : shoe ['name'],
 					'shoeColor'       : product ['colorDescription'],
 					'shoeImageUrl'    : product ['imageUrl'],
@@ -107,12 +118,48 @@ class AppSpiders:
 					'shoeSelectMethod': selector,
 					'shoePrice'       : product ['price'] ['msrp'],
 					'shoeSize'        : shoeSize,
-					'shoePublishTime' : product ['startSellDate'] [:20].replace ('T', ' ')
+					'shoePublishTime' : shoeTime,
+					'shoeCountry'     : country
 				}
-			n += 1
 			shoesData.append (shoeDict)
 		log.info('最新的数据获取完成')
 		return shoesData
+
+	def getNewShoesData(self):
+		"""
+		整合四个区的获取到的新数据
+		:return:
+		"""
+		allCountrtyShoesData = []
+		for country in ['cn','jp']:
+			data = self.spiderDate(country=country)
+			allCountrtyShoesData= data + allCountrtyShoesData
+		return allCountrtyShoesData
+
+	def changeTime(self,t,c):
+		"""
+		返回根据不同区转换后的时间
+		:param t:
+		:param c:
+		:return:
+		"""
+		timeArray = time.strptime(t,"%Y-%m-%d %H:%M:%S")
+		timestamp = int(time.mktime(timeArray))
+		global resulttime
+		if c == 'cn' or 'us':
+			timestamp_cn = timestamp + 28800
+			timeArray_cn = time.localtime(timestamp_cn)
+			resulttime = time.strftime("%Y-%m-%d %H:%M:%S",timeArray_cn)
+		elif c == 'jp':
+			timestamp_jp = timestamp + 32400
+			timeArray_jp = time.localtime (timestamp_jp)
+			resulttime = time.strftime ("%Y-%m-%d %H:%M:%S", timeArray_jp)
+		elif c == 'de':
+			timestamp_cn = timestamp + 21600
+			timeArray_cn = time.localtime (timestamp_cn)
+			resulttime = time.strftime ("%Y-%m-%d %H:%M:%S", timeArray_cn)
+		return resulttime
+
 
 	def updateCheck (self,data):
 		"""
@@ -121,7 +168,7 @@ class AppSpiders:
 		:return: 返回一个更新的数组和是否更新，数组中存的是鞋子的货号
 		"""
 		log.info('数据更新确认中...')
-		fetchSql = """SELECT shoeStyleCode FROM shoes"""
+		fetchSql = """SELECT shoeStyleCode,shoename,shoeCountry FROM shoes"""
 		OldData = self.db.fetchData(sql=fetchSql,c=None)
 		if len(OldData) == 0:
 			self.db.updateShoesTable(data=data)
@@ -130,18 +177,42 @@ class AppSpiders:
 				'data'    : 'no data'
 			}
 		else:
-			OldDataList = []
-			for olddata in OldData:
-				OldDataList.append(olddata[0])
+			CodeData_cn, NameData_cn = self.getCountryData(country='cn')
+			CodeData_us, NameData_us = self.getCountryData(country='us')
+			CodeData_de, NameData_de = self.getCountryData(country='de')
+			CodeData_jp, NameData_jp = self.getCountryData(country='jp')
 			isUpdate = False
 			updateData = []
+			# 获取到的新数据按照国区分别进行更新检查
 			for newdata in data:
-				if newdata['shoeStyleCode'] not in OldDataList:
-					updateData.append(newdata)
-					# 把更新的鞋子的图片下载到本地并把url改为本地url
-					newdata['shoeImage'] = self.download_imgage(url=newdata['shoeImageUrl'],filename=newdata['shoeStyleCode'])
-					newdata['id'] = None
-					isUpdate = True
+				if newdata['shoeCountry'] == 'cn':
+					if newdata['shoeStyleCode'] not in CodeData_cn or newdata['shoeName'] not in NameData_cn:
+						updateData.append(newdata)
+						# 把更新的鞋子的图片下载到本地并把url改为本地url
+						newdata['shoeImage'] = self.download_imgage(url=newdata['shoeImageUrl'],filename=newdata['shoeStyleCode'])
+						newdata['id'] = None
+						isUpdate = True
+				elif newdata['shoeCountry'] == 'us':
+					if newdata['shoeStyleCode'] not in CodeData_us or newdata['shoeName'] not in NameData_us:
+						updateData.append(newdata)
+						# 把更新的鞋子的图片下载到本地并把url改为本地url
+						newdata['shoeImage'] = self.download_imgage(url=newdata['shoeImageUrl'],filename=newdata['shoeStyleCode'])
+						newdata['id'] = None
+						isUpdate = True
+				elif newdata['shoeCountry'] == 'de':
+					if newdata['shoeStyleCode'] not in CodeData_de or newdata['shoeName'] not in NameData_de:
+						updateData.append(newdata)
+						# 把更新的鞋子的图片下载到本地并把url改为本地url
+						newdata['shoeImage'] = self.download_imgage(url=newdata['shoeImageUrl'],filename=newdata['shoeStyleCode'])
+						newdata['id'] = None
+						isUpdate = True
+				elif newdata['shoeCountry'] == 'jp':
+					if newdata['shoeStyleCode'] not in CodeData_jp or newdata['shoeName'] not in NameData_jp:
+						updateData.append(newdata)
+						# 把更新的鞋子的图片下载到本地并把url改为本地url
+						newdata['shoeImage'] = self.download_imgage(url=newdata['shoeImageUrl'],filename=newdata['shoeStyleCode'])
+						newdata['id'] = None
+						isUpdate = True
 			message ={
 				'isUpdate': isUpdate,
 				'data': updateData
@@ -149,10 +220,24 @@ class AppSpiders:
 			log.info('数据更新确认完成')
 		return message
 
+	def getCountryData(self,country):
+		"""
+		用于获取数据库中特定国家的数据
+		:param country:
+		:return:
+		"""
+		fetchsql = """SELECT shoeStyleCode,shoename FROM shoes where shoeCountry ='{}' """.format(country)
+		countryData = self.db.fetchData(sql=fetchsql,c=None)
+		CodeData = []
+		NameData = []
+		for data in countryData:
+			CodeData.append(data[0])
+			NameData.append(data[1])
+		return CodeData,NameData
 
 	def insertToDb(self,data):
 		log.info('向更新表中插入数据中...')
-		insertSql = """INSERT INTO "update" values (?,?,?,?,?,?,?,?,?,?)"""
+		insertSql = """INSERT INTO "update" values (?,?,?,?,?,?,?,?,?,?,?)"""
 		insertData = []
 		for item in data:
 			dataturple = (
@@ -165,7 +250,8 @@ class AppSpiders:
 				item['shoeSelectMethod'],
 				item['shoePrice'],
 				item['shoeSize'],
-				item['shoePublishTime']
+				item['shoePublishTime'],
+				item['shoeCountry']
 			)
 			insertData.append(dataturple)
 		self.db.insertData(sql=insertSql,d=insertData)
@@ -200,6 +286,7 @@ class AppSpiders:
 					fb.close ()
 				fa.close ()
 		return fileurl
+
 
 if __name__ == '__main__':
 	shoesdata = AppSpiders () # 实例化鞋子爬虫的类

@@ -142,7 +142,8 @@ class db:
 		                    'shoeSelectMethod' varchar (20),
                             'shoePrice' varchar (10),
                             'shoeSize' varchar (100),
-                            'shoePublishTime' varchar (100)
+                            'shoePublishTime' varchar (100),
+                            'shoeCountry' varchar(10)
                             )"""
         self.createTable(c=None, sql=createTableSql)
 
@@ -160,7 +161,7 @@ class db:
         # log.info('鞋子的久数据删除完成')
         # 把最新的数据插入鞋子库
         log.info('更新的鞋子数据插入中')
-        insertSql = """INSERT INTO shoes values (?,?,?,?,?,?,?,?,?,?)"""
+        insertSql = """INSERT INTO shoes values (?,?,?,?,?,?,?,?,?,?,?)"""
         insertData = []
         # 把传进来的字典数据 转成插入数据库的数据tulble
         for item in data:
@@ -174,7 +175,8 @@ class db:
                 item ['shoeSelectMethod'],
                 item ['shoePrice'],
                 item ['shoeSize'],
-                item ['shoePublishTime']
+                item ['shoePublishTime'],
+                item ['shoeCountry']
             )
             insertData.append (dataturple)
         self.insertData (sql=insertSql, d=insertData)
@@ -183,7 +185,7 @@ class db:
 if __name__ == '__main__':
     db = db()
     db.dropTable(table='shoes')
-    #db.dropTable(table='update')
+    db.dropTable(table='update')
     db.init()
     createTableSql = """CREATE TABLE 'update'(
                                 'id' INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -195,7 +197,8 @@ if __name__ == '__main__':
     		                    'shoeSelectMethod' varchar (20),
                                 'shoePrice' varchar (10),
                                 'shoeSize' varchar (100),
-                                'shoePublishTime' varchar (100)
+                                'shoePublishTime' varchar (100),
+                                'shoeCountry' varchar(10)
                                 )"""
     db.createTable(c=None, sql= createTableSql)
     # db.init()
