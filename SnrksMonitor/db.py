@@ -131,7 +131,7 @@ class db:
         else:
             log.info('sql为空')
 
-    def init(self):
+    def init_shoes(self):
         createTableSql = """CREATE TABLE 'shoes'(
                             'id' INTEGER PRIMARY KEY AUTOINCREMENT,
                             'shoename' varchar (30),
@@ -186,7 +186,7 @@ if __name__ == '__main__':
     db = db()
     db.dropTable(table='shoes')
     db.dropTable(table='update')
-    db.init()
+    db.init_shoes()
     createTableSql = """CREATE TABLE 'update'(
                                 'id' INTEGER PRIMARY KEY AUTOINCREMENT,
                                 'shoename' varchar (30),

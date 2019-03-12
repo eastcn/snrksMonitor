@@ -16,6 +16,7 @@ import time
 from SnrksMonitor.log import Logger
 from SnrksMonitor.db import db
 import requests
+import traceback
 
 log = Logger().log()
 
@@ -37,6 +38,7 @@ class AppSpiders:
 			# 'Authorization': auth
 		}
 		self.db = db ()
+		self.country = ['cn','us','de','jp']
 
 	def readyaml (self):
 		# read config from yaml document
@@ -57,18 +59,25 @@ class AppSpiders:
         名字+颜色 图片 货号 发售方式 价格 库存码数 发售时间
         :return: 返回出来一个数组，包含前50条的鞋子数据
         """
+		header = {
+			'User-Agent': random.choice (self.readyaml () ['User_Agents'])
+		}
+		proxy = {
+		}
 		log.info('最新的数据获取中...')
 		url = self.url[country]
 		global shoes
 		try:
-			responce = requests.get (url, headers=self.headers)
+			responce = requests.get (url, headers=header)
 			responceJson = json.loads (responce.text)
 			shoes = responceJson ['threads']
-		except (KeyError,TimeoutError):
+		except (KeyError,TimeoutError,ConnectionError):
+			e = traceback.format_exc()
 			isSuccess = False
 			failedNum = 1
 			while isSuccess == False:
 				log.info('获取接口失败，正在重试第{}次......'.format(failedNum))
+				log.debug('以下为详细错误：{}'.format(e))
 				responce = requests.get (url, headers=self.headers)
 				responceJson = json.loads (responce.text)
 				if 'threads' in responceJson.keys():
@@ -132,7 +141,7 @@ class AppSpiders:
 		:return:
 		"""
 		allCountrtyShoesData = []
-		for country in ['cn','jp']:
+		for country in self.country:
 			data = self.spiderDate(country=country)
 			allCountrtyShoesData= data + allCountrtyShoesData
 		return allCountrtyShoesData
