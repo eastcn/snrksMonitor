@@ -38,7 +38,7 @@ class AppSpiders:
 			# 'Authorization': auth
 		}
 		self.db = db ()
-		self.country = ['cn','us','de','jp']
+		self.country = ['cn','us']
 
 	def readyaml (self):
 		# read config from yaml document
@@ -264,7 +264,7 @@ class AppSpiders:
 				item['shoeCountry']
 			)
 			insertData.append(dataturple)
-		self.db.insertData(sql=insertSql,d=insertData)
+		self.db.insertData(sql=insertSql,d=insertData,path=None)
 		log.info('向更新表中插入数据结束')
 
 	def initDB(self):

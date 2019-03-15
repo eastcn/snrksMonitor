@@ -21,7 +21,7 @@ class db:
         self.databasePath = configdata['db']['db_path']
         self.table_name = configdata['db']['table_name']
 
-    def getConn(self, path):
+    def getConn(self,path=None):
         """
         获取数据库连接
         :return: 返回数据库连接对象
@@ -43,13 +43,13 @@ class db:
         else:
             return self.getConn(path=None).cursor()
 
-    def createTable(self, c, sql):
+    def createTable(self, path, sql):
         """
         创建数据库
         :return:
         """
         if sql is not None and sql != '':
-            conn = self.getConn(c)
+            conn = self.getConn()
             cu = self.getCursor(conn)
             cu.execute(sql)
             conn.commit()
@@ -59,12 +59,12 @@ class db:
         else:
             log.info('sql不正确')
 
-    def dropTable(self, table):
+    def dropTable(self, table, path):
         """
-        删表,暂时用不上，所以pass
+        删表
         :return:
         """
-        conn = self.getConn(None)
+        conn = self.getConn(path)
         cu = self.getCursor(conn)
         dropSql = """DROP TABLE '{}' """.format(table)
         cu.execute(dropSql)
@@ -73,7 +73,8 @@ class db:
         cu.close()
         conn.close()
 
-    def insertData(self, sql, d):
+
+    def insertData(self, sql, d, path=None):
         """
         插入数据
         :param sql: 插入的sql语句
@@ -82,7 +83,7 @@ class db:
         """
         if sql is not None and sql != ' ':
             if d is not None:
-                conn = self.getConn(None)
+                conn = self.getConn(path)
                 cu = self.getCursor(conn)
                 for data in d:
                     cu.execute(sql, data)
@@ -112,7 +113,7 @@ class db:
             log.info('sql为空')
             return 'failed'
 
-    def deleteData(self, sql):
+    def deleteData(self, sql, Path =None):
         """
         删除数据
         :param c:
@@ -121,7 +122,7 @@ class db:
         :return:
         """
         if sql is not None and sql != ' ':
-            conn = self.getConn(None)
+            conn = self.getConn(Path)
             cu = self.getCursor(conn)
             cu.execute(sql)
             conn.commit()
@@ -131,7 +132,41 @@ class db:
         else:
             log.info('sql为空')
 
+    def init_ippool(self,path=None):
+        """
+        初始化IP池表
+        :return:
+        """
+        createIpTableSql = """CREATE TABLE 'ips'(
+                            'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+                            'http' varchar (10),
+		                    'ip' varchar (30), 
+		                    'port' varchar (10)
+                            )"""
+        self.createTable(sql= createIpTableSql,path=None)
+
+    def insertIntoIpTable(self,data,path=None):
+        """
+        将数据插入IP池的数据库
+        :param data:
+        :param path:
+        :return:
+        """
+        inserSql = """INSERT INTO 'ips' values (?,?,?,?)"""
+        self.insertData(d=data,path=path,sql=inserSql)
+
+    def deleteFromIpTable(self,ids,path=None):
+        """
+        从ips表中删除数据
+        :param ids:
+        :param path:
+        :return:
+        """
+        deleteSql = """DELETE FROM 'ips' where id in {}""".format(ids)
+        self.deleteData(sql=deleteSql)
+
     def init_shoes(self):
+        """初始化鞋子表"""
         createTableSql = """CREATE TABLE 'shoes'(
                             'id' INTEGER PRIMARY KEY AUTOINCREMENT,
                             'shoename' varchar (30),
@@ -145,7 +180,7 @@ class db:
                             'shoePublishTime' varchar (100),
                             'shoeCountry' varchar(10)
                             )"""
-        self.createTable(c=None, sql=createTableSql)
+        self.createTable(path=None, sql=createTableSql)
 
 
     def updateShoesTable(self, data):
@@ -179,28 +214,29 @@ class db:
                 item ['shoeCountry']
             )
             insertData.append (dataturple)
-        self.insertData (sql=insertSql, d=insertData)
+        self.insertData (sql=insertSql, d=insertData, path=None)
         log.info('鞋子的最新数据插入成功')
 
 if __name__ == '__main__':
     db = db()
-    db.dropTable(table='shoes')
-    db.dropTable(table='update')
-    db.init_shoes()
-    createTableSql = """CREATE TABLE 'update'(
-                                'id' INTEGER PRIMARY KEY AUTOINCREMENT,
-                                'shoename' varchar (30),
-    		                    'shoeColor' varchar (30), 
-    		                    'shoeImageUrl' varchar (100),
-    		                    'shoeImage' varchar(100),
-    		                    'shoeStyleCode' varchar (50), 
-    		                    'shoeSelectMethod' varchar (20),
-                                'shoePrice' varchar (10),
-                                'shoeSize' varchar (100),
-                                'shoePublishTime' varchar (100),
-                                'shoeCountry' varchar(10)
-                                )"""
-    db.createTable(c=None, sql= createTableSql)
+    db.init_ippool()
+    # db.dropTable(table='shoes')
+    # db.dropTable(table='update')
+    # db.init_shoes()
+    # createTableSql = """CREATE TABLE 'update'(
+    #                             'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+    #                             'shoename' varchar (30),
+    # 		                    'shoeColor' varchar (30),
+    # 		                    'shoeImageUrl' varchar (100),
+    # 		                    'shoeImage' varchar(100),
+    # 		                    'shoeStyleCode' varchar (50),
+    # 		                    'shoeSelectMethod' varchar (20),
+    #                             'shoePrice' varchar (10),
+    #                             'shoeSize' varchar (100),
+    #                             'shoePublishTime' varchar (100),
+    #                             'shoeCountry' varchar(10)
+    #                             )"""
+    # db.createTable(c=None, sql= createTableSql)
     # db.init()
     # insertSql = """INSERT INTO shoes values (?,?,?,?,?,?,?,?,?)"""
     # insertData = [
