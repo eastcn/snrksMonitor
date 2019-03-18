@@ -30,15 +30,15 @@ class AppSpiders:
 			'jp' : 'https://api.nike.com/snkrs/content/v1/?country=JP&language=ja&offset=0&orderBy=published'
 		}
 
-        self.entry = 'https://api.nike.com/launch/entries/v2'
-        useragent = random.choice(self.readyaml()['User_Agents'])
-        # auth = self.readyaml()['auth']
-        self.headers = {
-            'User_Agents': useragent
-            # 'Authorization': auth
-        }
-        self.db = db()
-        self.country = ['cn', 'us']
+		self.entry = 'https://api.nike.com/launch/entries/v2'
+		useragent = random.choice(self.readyaml()['User_Agents'])
+		# auth = self.readyaml()['auth']
+		self.headers = {
+			'User_Agents': useragent
+			# 'Authorization': auth
+		}
+		self.db = db()
+		self.country = ['cn', 'us']
 
 	def readyaml (self):
 		# read config from yaml document
@@ -55,10 +55,10 @@ class AppSpiders:
 
 	def spiderDate (self,country):
 		"""
-        通过snrks的首页接口获取到首页最新放送的鞋子数据
-        名字+颜色 图片 货号 发售方式 价格 库存码数 发售时间
-        :return: 返回出来一个数组，包含前50条的鞋子数据
-        """
+		通过snrks的首页接口获取到首页最新放送的鞋子数据
+		名字+颜色 图片 货号 发售方式 价格 库存码数 发售时间
+		:return: 返回出来一个数组，包含前50条的鞋子数据
+		"""
 		header = {
 			'User-Agent': random.choice (self.readyaml () ['User_Agents'])
 		}
@@ -245,27 +245,27 @@ class AppSpiders:
 			NameData.append(data[1])
 		return CodeData,NameData
 
-    def insertToDb(self, data):
-        log.info('向更新表中插入数据中...')
-        insertSql = """INSERT INTO "update" values (?,?,?,?,?,?,?,?,?,?,?)"""
-        insertData = []
-        for item in data:
-            dataturple = (
-                item['id'],
-                item['shoeName'],
-                item['shoeColor'],
-                item['shoeImageUrl'],
-                item['shoeImage'],
-                item['shoeStyleCode'],
-                item['shoeSelectMethod'],
-                item['shoePrice'],
-                item['shoeSize'],
-                item['shoePublishTime'],
-                item['shoeCountry']
-            )
-            insertData.append(dataturple)
-        self.db.insertData(sql=insertSql, d=insertData,path=None)
-        log.info('向更新表中插入数据结束')
+	def insertToDb(self, data):
+		log.info('向更新表中插入数据中...')
+		insertSql = """INSERT INTO "update" values (?,?,?,?,?,?,?,?,?,?,?)"""
+		insertData = []
+		for item in data:
+			dataturple = (
+				item['id'],
+				item['shoeName'],
+				item['shoeColor'],
+				item['shoeImageUrl'],
+				item['shoeImage'],
+				item['shoeStyleCode'],
+				item['shoeSelectMethod'],
+				item['shoePrice'],
+				item['shoeSize'],
+				item['shoePublishTime'],
+				item['shoeCountry']
+			)
+			insertData.append(dataturple)
+		self.db.insertData(sql=insertSql, d=insertData,path=None)
+		log.info('向更新表中插入数据结束')
 
 	def initDB(self):
 		deleteSql = """DELETE FROM "update" where id < 100000"""
