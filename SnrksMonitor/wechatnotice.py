@@ -28,9 +28,13 @@ class wechat():
 				if item['shoePublishTime'] is None:
 					message = '国家:[{}] [{}] '.format (item ['shoeCountry'], item ['shoeName'])
 				else:
-					message = '国家:[{}] [{}]  发售：[{}]  货号：[{}]  价格：[{}] 抽签方式：[{}]  库存：[{}] '.format(
-							item['shoeCountry'], item['shoeName'],item['shoePublishTime'],item['shoeStyleCode'],
-							item['shoePrice'], item['shoeSelectMethod'],item['shoeSize'])
+					message ="***************************\n[{}]\n国区:[{}]\n发售:[{}]\n货号:[{}]\n价格:[{}]\n抽签:[{}] \n库存:[{}]\n***************************".format(item['shoeName'],
+					                            item['shoeCountry'],
+					                            item['shoePublishTime'],
+					                            item['shoeStyleCode'],
+												item['shoePrice'],
+							                    item['shoeSelectMethod'],
+							                    item['shoeSize'])
 				itchat.send_msg(msg=message, toUserName=user)
 				itchat.send_image(fileDir=item['shoeImage'], toUserName=user)
 				log.info('推送完成')
@@ -77,3 +81,6 @@ class wechat():
 #     chat.login()
 #     chat.getGroup()
 # # groupid = chat.getGroup()
+"""
+
+"""
