@@ -24,6 +24,7 @@ class validate:
 		available_ips = []
 		unavailable_ips = []
 		for ip in ips:
+
 			log.info(f'开始验证代理{ip ["http"]}：{ip["ip"]}:{ip["port"]}')
 			ip_port = f'{ip["ip"]}:{ip["port"]}'
 			proxy = {ip ['http']: ip_port}
@@ -39,20 +40,25 @@ class validate:
 					# 判断是否为普通匿名，透明，或者高级匿名，记录普通匿名和高级匿名到数据库
 					if proxy_connection:
 						log.info (f"{time} success: {ip ['http']}://{ip ['ip']}:{ip ['port']} ----普通匿名")
+						ip['availible'] = 2 # 可用
 						available_ips.append(ip)
 					elif ',' in ip_v:
 						log.info (f"{time} success: {ip ['http']}://{ip ['ip']}:{ip ['port']} ----透明")
+						ip['availible'] = 1 # 可用
 						unavailable_ips.append(ip)
 					else:
 						log.info (f"{time} success: {ip ['http']}://{ip ['ip']}:{ip ['port']} ----高级匿名")
+						ip['availible'] = 3 # 可用
 						available_ips.append (ip)
 
 				else:
 					log.info (f"{time} failed: {ip ['http']}://{ip ['ip']}:{ip ['port']} ----无效代理")
+					ip ['availible'] = 0  # 可用
 					unavailable_ips.append (ip)
 			except Exception as e:
 				log.info ('error:'+ repr(e))
 				log.info (f"{time} error: {ip ['http']}://{ip ['ip']}:{ip ['port']} ----无效代理")
+				ip ['availible'] = 0  # 可用
 				unavailable_ips.append (ip)
 
 		return available_ips,unavailable_ips

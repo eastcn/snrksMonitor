@@ -13,12 +13,16 @@ class CheckFromDb:
 	def __init__(self):
 		self.db = db()
 
-	def read_from_db(self):
+	def read_from_db(self,sql=None):
 		"""
 		从数据库中读取数据
 		:return:
 		"""
-		fetchSql = """SELECT * From 'ips'"""
+		FetchSql = """SELECT * From 'ips'"""
+		if sql == None:
+			fetchSql = FetchSql
+		else:
+			fetchSql = sql
 		db_data = self.db.fetchData(sql=fetchSql,c=None)
 		ip_list = []
 		for data in db_data:
@@ -26,7 +30,8 @@ class CheckFromDb:
 				'id': data[0],
 				'ip': data[2],
 				'http': data[1],
-				'port': data[3]
+				'port': data[3],
+				'availible': data[4]
 			}
 			ip_list.append(ip_dict)
 		return ip_list
@@ -39,6 +44,8 @@ class CheckFromDb:
 		id_list = []
 		for ip in list:
 			id_list.append(ip['id'])
+			sql = """update ips set 'availible' = {} where 'id' = {} """.format (ip['availible'],ip['id'])
+			self.db.updateTable(sql=sql,path=None)
 		ids = tuple(id_list)
 		self.db.deleteFromIpTable(ids=ids)
 
@@ -55,7 +62,7 @@ class CheckFromDb:
 		:return:
 		"""
 		for ip in list:
-			data = [(None, ip['http'], ip['ip'], ip['port'])]
+			data = [(None, ip['http'], ip['ip'], ip['port'], ip['availible'])]
 			log.info ('开始插入数据库')
 			try:
 				self.db.insertIntoIpTable (data=data)

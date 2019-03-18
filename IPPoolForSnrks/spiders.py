@@ -12,18 +12,14 @@ class proxyspider:
 		self.headers = {
 			'User-Agent': random.choice(self.config['User_Agents'])
 		}
+		self.page = 3
 
 
 	def spiderFromXici(self,url='https://www.xicidaili.com/nn/'):
 		IPPool = []
-		for i in range(1):
+		for i in range(self.page):
 			#a = config()
-			page = 1
-			user_agent = self
-			headers = {
-				'User-Agent' : user_agent
-			}
-			Url = url + str(page)
+			Url = url + str(i)
 			r = requests.get(url=Url,headers=self.headers)
 			selector = etree.HTML(r.text)
 			tr = selector.xpath('//tr') #选取页面中的所有tr标签
@@ -44,10 +40,32 @@ class proxyspider:
 					IPPool.append(ippool)
 		return IPPool
 
-
+	def spiderFromQuick(self):
+		IPPool = []
+		for i in range(self.page):
+			url = 'https://www.kuaidaili.com/free/inha/{}/'.format (str(i+1))
+			r = requests.get(url=url,headers=self.headers)
+			selector = etree.HTML(r.text)
+			tr = selector.xpath('//tr') #选取页面中的所有tr标签
+			for t in range(len(tr)):
+				if t >= 1:
+					ippool={
+						'ip' : '',
+						'port':'',
+						'http':''
+					}
+					ippool['ip'] = tr[t].xpath ('./td[@data-title="IP"]/text()')[0]
+					ippool['port'] = tr[t].xpath ('./td[@data-title="PORT"]/text()')[0]
+					temp = tr[t].xpath('./td[@data-title="类型"]/text()')[0]
+					if temp == 'HTTP':
+						ippool ['http'] = 'http'
+					elif temp == 'HTTPS':
+						ippool ['http'] = 'https'
+					IPPool.append(ippool)
+		return IPPool
 
 
 if __name__ == '__main__':
-	for ip in proxyspider().spiderFromXici():
+	for ip in proxyspider().spiderFromQuick():
 		print(ip)
 

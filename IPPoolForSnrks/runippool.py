@@ -17,20 +17,20 @@ def run_add_pool():
 	:return:
 	"""
 	spider = proxyspider()
-	spideData = spider.spiderFromXici()
+	spideData = spider.spiderFromQuick() + spider.spiderFromXici()
 	newIPS = check.if_update(spideData)
-	if newIPS['isupdate'] == True:
-		available_ip, unavailable_ip = validate().validate(ips=newIPS['data'])
-		check.inserte_into_db(list=available_ip)
+	available_ip, unavailable_ip = validate ().validate (ips=newIPS ['data'])
+	check.inserte_into_db(list=available_ip+unavailable_ip)
+
 	"""这边逻辑需要修改，需要把所有的IP都记录一遍，并做标记是否有效，因此需要在数据库中增加一个标记字段"""
-	pass
 
 def run_check_pool():
 	"""
 	运行检查IP POOL
 	:return:
 	"""
-	ip_list = check.read_from_db()
+	sql = """SELECT * FROM ips where 'availible' in (1,2,3)"""
+	ip_list = check.read_from_db(sql=sql)
 	available_ip, unavailable_ip = validate().validate(ips=ip_list)
 	check.delete_from_db(unavailable_ip)
 

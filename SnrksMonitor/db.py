@@ -141,7 +141,8 @@ class db:
                             'id' INTEGER PRIMARY KEY AUTOINCREMENT,
                             'http' varchar (10),
 		                    'ip' varchar (30), 
-		                    'port' varchar (10)
+		                    'port' varchar (10),
+		                    'availible' int(2)
                             )"""
         self.createTable(sql= createIpTableSql,path=None)
 
@@ -152,8 +153,25 @@ class db:
         :param path:
         :return:
         """
-        inserSql = """INSERT INTO 'ips' values (?,?,?,?)"""
+        inserSql = """INSERT INTO 'ips' values (?,?,?,?,?)"""
         self.insertData(d=data,path=path,sql=inserSql)
+
+    def updateTable(self,sql,path):
+        """
+        更新数据
+        :return:
+        """
+        if sql is not None and sql != ' ':
+            conn = self.getConn(Path)
+            cu = self.getCursor(conn)
+            cu.execute(sql)
+            conn.commit()
+            cu.close()
+            conn.close()
+            log.info('数据库中数据更新成功')
+        else:
+            log.info('sql为空')
+
 
     def deleteFromIpTable(self,ids,path=None):
         """
@@ -219,6 +237,7 @@ class db:
 
 if __name__ == '__main__':
     db = db()
+    db.dropTable(table='ips',path=None)
     db.init_ippool()
     # db.dropTable(table='shoes')
     # db.dropTable(table='update')
