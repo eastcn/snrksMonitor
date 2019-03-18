@@ -38,7 +38,7 @@ class AppSpiders:
 			# 'Authorization': auth
 		}
 		self.db = db()
-		self.country = ['cn', 'us']
+		self.country = ['cn', 'us','jp']
 
 	def readyaml (self):
 		# read config from yaml document
