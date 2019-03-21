@@ -71,13 +71,13 @@ class AppSpiders:
 			responce = requests.get (url, headers=header)
 			responceJson = json.loads (responce.text)
 			shoes = responceJson ['threads']
-		except (KeyError,TimeoutError,ConnectionError):
-			e = traceback.format_exc()
+		except Exception as e:
+			ex = traceback.format_exc()
 			isSuccess = False
 			failedNum = 1
 			while isSuccess == False:
-				log.info('获取接口失败，正在重试第{}次......'.format(failedNum))
-				log.debug('以下为详细错误：{}'.format(e))
+				log.info('获取{}接口失败，正在重试第{}次......'.format(country,failedNum))
+				log.debug('以下为详细错误：{}'.format(ex))
 				responce = requests.get (url, headers=self.headers)
 				responceJson = json.loads (responce.text)
 				if 'threads' in responceJson.keys():
