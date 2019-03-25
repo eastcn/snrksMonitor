@@ -106,7 +106,8 @@ class AppSpiders:
 					'shoePrice'       : '',
 					'shoeSize'        : '',
 					'shoePublishTime' : '',
-					'shoeCountry'     : country
+					'shoeCountry'     : country,
+					'shoeUpdateTime'  : ''
 				}
 			else:
 				shoeSize = ''
@@ -129,7 +130,8 @@ class AppSpiders:
 					'shoePrice'       : product ['price'] ['msrp'],
 					'shoeSize'        : shoeSize,
 					'shoePublishTime' : shoeTime,
-					'shoeCountry'     : country
+					'shoeCountry'     : country,
+					'shoeUpdateTime'  : shoe['lastUpdatedTime']
 				}
 			shoesData.append (shoeDict)
 		log.info('最新的数据获取完成')
@@ -178,8 +180,8 @@ class AppSpiders:
 		:return: 返回一个更新的数组和是否更新，数组中存的是鞋子的货号
 		"""
 		log.info('数据更新确认中...')
-		fetchSql = """SELECT shoeStyleCode,shoename,shoeCountry FROM shoes"""
-		OldData = self.db.fetchData(sql=fetchSql,c=None)
+		fetchSql = """SELECT shoeStyleCode,shoename,shoeCountry,shoeUpdateTime,create_time FROM shoes"""
+		OldData = self.db.fetchData(sql=fetchSql, c=None)
 		if len(OldData) == 0:
 			self.db.updateShoesTable(data=data)
 			message = {
@@ -202,6 +204,9 @@ class AppSpiders:
 						newdata['shoeImage'] = self.download_imgage(url=newdata['shoeImageUrl'],filename=newdata['shoeStyleCode'])
 						newdata['id'] = None
 						isUpdate = True
+					else:
+						# 判断鞋子的last更新时间是否比存在数据库中的更新时间大，以下三国一样的
+						pass
 				elif newdata['shoeCountry'] == 'us':
 					if newdata['shoeStyleCode'] not in CodeData_us or newdata['shoeName'] not in NameData_us:
 						updateData.append(newdata)
@@ -230,7 +235,7 @@ class AppSpiders:
 			log.info('数据更新确认完成')
 		return message
 
-	def getCountryData(self,country):
+	def getCountryData(self, country):
 		"""
 		用于获取数据库中特定国家的数据
 		:param country:
