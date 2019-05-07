@@ -36,14 +36,14 @@ class WebSpider:
         # log.debug('start download image：%s' % url)
         try:
             r = requests.get(url=url)
-            with open (fileurl, 'wb') as f:
-                f.write (r.content)
-                f.close ()
+            with open(fileurl, 'wb') as f:
+                f.write(r.content)
+                f.close()
         except Exception:
             log.error('failed to download picture')
-            with open('./img/go.jpg','wb') as fa:
+            with open('./img/go.jpg', 'wb') as fa:
                 content = fa.read()
-                with open(fileurl,'wb') as fb:
+                with open(fileurl, 'wb') as fb:
                     fb.write(content)
                     fb.close()
                 fa.close()
@@ -98,7 +98,6 @@ class WebSpider:
     def data_analysis(self):
         """
         分析是否有更新
-        :param up:
         :return: 返回更新数据
         """
         log.info('start checking whether updated or not')
@@ -175,11 +174,3 @@ class WebSpider:
         else:
             method = '大抽签'
         return method
-
-
-if __name__ == '__main__':
-    url = 'https://www.nike.com/cn/launch/t/air-jordan-6-retro-nrg-black-dark-concord/'
-    header = {
-        'User_Agents': "Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10"
-    }
-    WebSpider().get_shoes_price(sc=url, header=header, timeout=30)

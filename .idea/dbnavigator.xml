@@ -25,7 +25,7 @@
     <show-object-properties value="false" />
     <loaded-nodes>
       <connection connection-id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7">
-        <schema name="main" object-types="index, dataset trigger, constraint, table, view, column" />
+        <schema name="main" object-types="table, view" />
       </connection>
       <connection connection-id="59b365f5-3524-408c-9cb0-0ccfd2e04945">
         <schema name="main" object-types="table, view" />
@@ -34,16 +34,14 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7">
-      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[alter table shoes add column update_time on update default (datetime('now','localtime'))]]></console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main">alter table shoes add column update_time on update default (datetime('now','localtime'))</console>
     </connection>
     <connection id="59b365f5-3524-408c-9cb0-0ccfd2e04945">
       <console name="Connection 1" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7" object-ref="schemas/main/tables/shoes" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7" />

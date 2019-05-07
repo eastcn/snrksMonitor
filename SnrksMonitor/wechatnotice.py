@@ -67,20 +67,3 @@ class wechat():
 		groupid = self.getChatRoomId(nickname=groupname)
 		return groupid
 
-
-# if __name__ == '__main__':
-#     groupid = ''
-#     msg = ''
-#     try:
-#         f = open('./config.yaml')
-#         c = yaml.load(f)
-#         groupid = c['chatroomid']
-#     except IOError:
-#         print('open config.yaml failed')
-#     chat = wechat()
-#     chat.login()
-#     chat.getGroup()
-# # groupid = chat.getGroup()
-"""
-
-"""

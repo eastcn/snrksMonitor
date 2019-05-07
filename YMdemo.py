@@ -1,12 +1,17 @@
 from selenium import webdriver
+from apscheduler.schedulers.blocking import BlockingScheduler
 import time
 import traceback
 
 def openWeb():
     path = './chromedriver.exe'
     driver = webdriver.Chrome(path)
-    url = 'https://www.wjx.cn/xz/32823920.aspx' # url需要为手机上查看的
-    driver.get(url)
+    url = 'https://www.wjx.top/m/36553538.aspx'  # url需要为手机上查看的
+    try:
+        driver.get(url)
+    except (TimeoutError, ConnectionError):
+        driver.get(url)
+
     # 获取所有的input输入框
     textinput = driver.find_element_by_class_name('fieldset').find_elements_by_tag_name('input')
     # 获取所有的单选框
@@ -42,7 +47,21 @@ def openWeb():
     # driver.close()
 
 
+def print_time():
+    time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    print(f"当前时间为：{time_now}")
+
+
+def print_date():
+    time_now = time.strftime("%Y-%m-%d", time.localtime())
+    print(time_now)
+
+
 if __name__ == '__main__':
-    # openWeb()
-    pass
-    # 设置定时任务
+    # openWeb()z
+    # 设置定时任务\
+    scheduler = BlockingScheduler()
+    scheduler.add_job(print_time, 'interval', seconds=1)
+    # scheduler.add_job(print_date, 'interval', seconds=3)
+    scheduler.add_job(openWeb, 'date', run_date='2019-3-27 14:02:00')
+    scheduler.start()
