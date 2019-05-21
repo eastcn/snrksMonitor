@@ -5,3 +5,8 @@
 爬取四个国区的数据-保存到数据库-再次爬取-进行比较-得出结果-进入休眠
 
 数据库采用的是sqlite，因此也一并上传了。
+
+# 2019-5-21更新
+增加了一种推送方式，bark。目前只支持在IOS上使用。
+在APPStore中下载 barK APP,获取自己设备的token。
+在SnrksMonitor/new_ios_push.py文件的PushToIos.Push_list中加入自己的token即可。
