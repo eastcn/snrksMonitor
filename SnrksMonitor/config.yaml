@@ -56,3 +56,5 @@ logConfig:
 db:
   db_path: ../SnrksDataBase.db
   table_name: shoes
+
+country: ["cn","us","jp"]

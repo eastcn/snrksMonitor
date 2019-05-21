@@ -25,7 +25,7 @@
     <show-object-properties value="false" />
     <loaded-nodes>
       <connection connection-id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7">
-        <schema name="main" object-types="table, view" />
+        <schema name="main" object-types="dataset trigger, table, view, index, constraint, column" />
       </connection>
       <connection connection-id="59b365f5-3524-408c-9cb0-0ccfd2e04945">
         <schema name="main" object-types="table, view" />
@@ -34,14 +34,16 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7">
-      <console name="Connection" type="STANDARD" schema="main" session="Main">alter table shoes add column update_time on update default (datetime('now','localtime'))</console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[delete from shoes where id =390]]></console>
     </connection>
     <connection id="59b365f5-3524-408c-9cb0-0ccfd2e04945">
       <console name="Connection 1" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7" object-ref="schemas/main/tables/shoes" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7" />
@@ -50,6 +52,9 @@
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7" dataset="main.shoes" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7" dataset="main.sqlite_sequence" active-filter-id="" />
+    <filter-actions connection-id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7" dataset="main.shoe" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7" dataset="main.ips" active-filter-id="" />
+    <filter-actions connection-id="ed049b46-3e88-49bb-8c80-ae7fdeb76de7" dataset="main.update" active-filter-id="" />
     <filter-actions connection-id="59b365f5-3524-408c-9cb0-0ccfd2e04945" dataset="main.shoes" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">

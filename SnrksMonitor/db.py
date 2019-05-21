@@ -7,13 +7,14 @@ from SnrksMonitor.log import Logger
 
 log = Logger().log()
 
+
 class db:
     def __init__(self):
         file = './config.yaml'
         try:
             f = open(file, 'r', encoding='UTF-8')
             global configdata
-            configdata = yaml.load(f)
+            configdata = yaml.load(f, Loader=yaml.FullLoader)
         except IOError:
             # logging.log('open config failed')
             log.info('open config failed')
@@ -21,7 +22,7 @@ class db:
         self.databasePath = configdata['db']['db_path']
         self.table_name = configdata['db']['table_name']
 
-    def getConn(self,path=None):
+    def getConn(self, path=None):
         """
         获取数据库连接
         :return: 返回数据库连接对象
@@ -73,7 +74,6 @@ class db:
         cu.close()
         conn.close()
 
-
     def insertData(self, sql, d, path=None):
         """
         插入数据
@@ -113,7 +113,7 @@ class db:
             log.info('sql为空')
             return 'failed'
 
-    def deleteData(self, sql, Path =None):
+    def deleteData(self, sql, Path=None):
         """
         删除数据
         :param c:
@@ -132,7 +132,7 @@ class db:
         else:
             log.info('sql为空')
 
-    def init_ippool(self,path=None):
+    def init_ippool(self, path=None):
         """
         初始化IP池表
         :return:
@@ -144,9 +144,9 @@ class db:
 		                    'port' varchar (10),
 		                    'availible' int(2)
                             )"""
-        self.createTable(sql= createIpTableSql,path=None)
+        self.createTable(sql=createIpTableSql, path=None)
 
-    def insertIntoIpTable(self,data,path=None):
+    def insertIntoIpTable(self, data, path=None):
         """
         将数据插入IP池的数据库
         :param data:
@@ -154,9 +154,9 @@ class db:
         :return:
         """
         inserSql = """INSERT INTO 'ips' values (?,?,?,?,?)"""
-        self.insertData(d=data,path=path,sql=inserSql)
+        self.insertData(d=data, path=path, sql=inserSql)
 
-    def updateTable(self,sql,path):
+    def updateTable(self, sql, path):
         """
         更新数据
         :return:
@@ -172,8 +172,7 @@ class db:
         else:
             log.info('sql为空')
 
-
-    def deleteFromIpTable(self,ids,path=None):
+    def deleteFromIpTable(self, ids, path=None):
         """
         从ips表中删除数据
         :param ids:
@@ -200,19 +199,12 @@ class db:
                             )"""
         self.createTable(path=None, sql=createTableSql)
 
-
     def updateShoesTable(self, data):
         """
         对鞋子表进行更新
         :param data:
         :return:
         """
-        # 删除鞋子表中的数据
-        # deleteShoesSql = """DELETE FROM shoes where id < 1000"""
-        # log.info('鞋子的久数据删除中')
-        # self.deleteData(sql=deleteShoesSql)
-        # log.info('鞋子的久数据删除完成')
-        # 把最新的数据插入鞋子库
         log.info('更新的鞋子数据插入中')
         insertSql = """INSERT INTO shoes values (?,?,?,?,?,?,?,?,?,?,?)"""
         insertData = []
@@ -220,25 +212,26 @@ class db:
         for item in data:
             dataturple = (
                 item['id'],
-                item ['shoeName'],
-                item ['shoeColor'],
-                item ['shoeImageUrl'],
-                item ['shoeImage'],
-                item ['shoeStyleCode'],
-                item ['shoeSelectMethod'],
-                item ['shoePrice'],
-                item ['shoeSize'],
-                item ['shoePublishTime'],
-                item ['shoeCountry']
+                item['shoeName'],
+                item['shoeColor'],
+                item['shoeImageUrl'],
+                item['shoeImage'],
+                item['shoeStyleCode'],
+                item['shoeSelectMethod'],
+                item['shoePrice'],
+                item['shoeSize'],
+                item['shoePublishTime'],
+                item['shoeCountry']
             )
-            insertData.append (dataturple)
-        self.insertData (sql=insertSql, d=insertData, path=None)
+            insertData.append(dataturple)
+        self.insertData(sql=insertSql, d=insertData, path=None)
         log.info('鞋子的最新数据插入成功')
+
 
 if __name__ == '__main__':
     db = db()
-    db.dropTable(table='ips',path=None)
-    db.init_ippool()
+    # db.dropTable(table='shoes', path=None)
+    db.init_shoes()
     # db.dropTable(table='shoes')
     # db.dropTable(table='update')
     # db.init_shoes()

@@ -16,6 +16,7 @@ import time
 from SnrksMonitor.log import Logger
 from SnrksMonitor.db import db
 import requests
+import requests.adapters
 import traceback
 
 log = Logger().log()
@@ -39,6 +40,7 @@ class AppSpiders:
         }
         self.db = db()
         self.country = ['cn', 'us', 'jp']
+        requests.adapters.DEFAULT_RETRIES = 10
 
     def readyaml(self):
         # read config from yaml document
@@ -46,7 +48,7 @@ class AppSpiders:
         try:
             f = open(file, 'r', encoding='UTF-8')
             global configdata
-            configdata = yaml.load(f)
+            configdata = yaml.load(f, Loader=yaml.FullLoader)
         except IOError:
             # logging.log('open config failed')
             print('open config failed')
@@ -83,7 +85,7 @@ class AppSpiders:
                     shoes = responceJson['threads']
                     log.info('重试成功，正在恢复')
                     isSuccess = True
-                elif failedNum == 30:
+                elif failedNum == 60:
                     shoes = []
                     break
                 else:
@@ -109,6 +111,10 @@ class AppSpiders:
                     'shoeUpdateTime': ''
                 }
             else:
+                if shoe['name'] is '':
+                    shoe_name = shoe['subtitle']
+                else:
+                    shoe_name = shoe['name']
                 shoeSize = ''
                 for sku in product['skus']:
                     shoeSize = '{}|{}'.format(shoeSize, sku['localizedSize'])
@@ -120,7 +126,7 @@ class AppSpiders:
                 shoeTime = self.changeTime(t=t, c=country)
                 shoeDict = {
                     'id': None,
-                    'shoeName': shoe['name'],
+                    'shoeName': shoe_name,
                     'shoeColor': product['colorDescription'],
                     'shoeImageUrl': product['imageUrl'],
                     'shoeImage': None,
@@ -150,8 +156,8 @@ class AppSpiders:
     def changeTime(self, t, c):
         """
         返回根据不同区转换后的时间
-        :param t:
-        :param c:
+        :param t: 时间
+        :param c: 国家
         :return:
         """
         timeArray = time.strptime(t, "%Y-%m-%d %H:%M:%S")
@@ -178,7 +184,7 @@ class AppSpiders:
         :return: 返回一个更新的数组和是否更新，数组中存的是鞋子的货号
         """
         log.info('数据更新确认中...')
-        fetchSql = """SELECT shoeStyleCode,shoename,shoeCountry,shoeUpdateTime,create_time FROM shoes"""
+        fetchSql = """SELECT shoeStyleCode,shoename,shoeCountry FROM shoes"""
         OldData = self.db.fetchData(sql=fetchSql, c=None)
         if len(OldData) == 0:
             self.db.updateShoesTable(data=data)
@@ -289,6 +295,7 @@ class AppSpiders:
         log.debug('start download image：%s' % filename)
         fileurl = './img/{}.jpg'.format(filename)
         try:
+
             r = requests.get(url=url)
             with open(fileurl, 'wb') as f:
                 f.write(r.content)

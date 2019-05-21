@@ -42,7 +42,7 @@ class Logger:
         try:
             with open('./config.yaml', 'r', encoding='utf-8') as f:
                 global config_data
-                config_data = yaml.load(f)
+                config_data = yaml.load(f, Loader=yaml.FullLoader)
         except IOError:
             self.logger.error('open config file failed')
         case1 = config_data['logConfig']['testLogLevel']['mainLogLevel']
